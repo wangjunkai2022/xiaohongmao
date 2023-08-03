@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/edit_menu_group">
+        <item android:icon="@drawable/ic_menu_edit" android:id="@+id/action_edit" android:title="" app:showAsAction="ifRoom"/>
+    </group>
+    <item android:icon="@drawable/ic_more_vert" android:id="@+id/more" android:orderInCategory="101" android:title="" app:iconTint="@color/white" app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/admin_actions">
+                <item android:icon="@drawable/icon_link" android:id="@+id/action_set_public" android:title="@string/activity_group_manager_make_public" app:showAsAction="withText|always"/>
+                <item android:icon="@drawable/icon_link" android:id="@+id/action_set_private" android:title="@string/activity_group_manager_make_private" app:showAsAction="withText|always"/>
+                <item android:icon="@drawable/ic_show_chat_history" android:id="@+id/action_show_history_for_new_members" android:title="@string/activity_group_manager_show_history_to_new_members" app:showAsAction="withText|always"/>
+                <item android:icon="@drawable/ic_show_chat_history" android:id="@+id/action_hide_history_for_new_members" android:title="@string/activity_group_manager_hide_history_to_new_members" app:showAsAction="withText|always"/>
+            </group>
+            <item android:icon="@drawable/ic_exit_group" android:id="@+id/action_leave" android:title="@string/activity_main_chat_delete_group" app:showAsAction="withText|always"/>
+        </menu>
+    </item>
+</menu>

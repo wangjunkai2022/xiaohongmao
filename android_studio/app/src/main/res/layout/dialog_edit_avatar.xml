@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/arc_bg_white_top_24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/title" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/me_change_avatar"/>
+    <TextView android:textSize="17sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_camera" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/me_take_picture"/>
+    <View style="@style/Setting.ItemDivider"/>
+    <TextView android:textSize="17sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_gallery" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/me_select_from_gallery"/>
+    <View style="@style/Setting.ItemDivider"/>
+    <TextView android:textSize="17sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/cancel" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel"/>
+</LinearLayout>

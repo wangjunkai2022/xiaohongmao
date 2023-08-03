@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="-12dp">
+    <ImageView android:id="@+id/img_user_avatar" android:background="@drawable/bg_circle" android:padding="1dp" android:layout_width="@dimen/avatar_size_small" android:layout_height="@dimen/avatar_size_small" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:backgroundTint="@color/online_audience_avatar_border" fresco:backgroundImage="@color/rgb_eaeaea" fresco:roundingBorderColor="@color/online_audience_avatar_border"/>
+</RelativeLayout>

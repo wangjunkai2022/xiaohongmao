@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:gravity="center" android:background="@color/imToolbarColor" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:titleTextColor="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/toolbarContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/flAvatar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:id="@id/tvToolbarAvatar" android:layout_width="@dimen/shape_create_chat_name_size" android:layout_height="@dimen/shape_create_chat_name_size" style="@style/textAvatarPlaceHolder" />
+                <ImageView android:id="@id/ivToolbarAvatar" android:layout_width="@dimen/shape_create_chat_name_size" android:layout_height="@dimen/shape_create_chat_name_size" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/ivToolbarAvatarLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tvToolbarTitle" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/default_activity_margin_half" app:layout_constraintBottom_toBottomOf="@id/flAvatar" app:layout_constraintStart_toEndOf="@id/flAvatar" app:layout_constraintTop_toTopOf="@id/flAvatar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/bg_deposit_option_h" />
+    <item android:state_activated="true">
+        <shape>
+            <corners android:radius="6.0dip" />
+            <stroke android:width="2.0dip" android:color="@color/im_me_message_bubble" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="6.0dip" />
+            <stroke android:width="2.0dip" android:color="@color/color_gray_d9d9d9" />
+        </shape>
+    </item>
+</selector>

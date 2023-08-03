@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_svga_peerage_anims" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/room_svga_peerage_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/svga_top" fresco:clearsAfterStop="true" fresco:fillMode="Backward" fresco:loopCount="1" />
+    <com.qennnsad.aknkaksd.presentation.ui.room.view.PeerageLoginView android:id="@id/room_peerage_login_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

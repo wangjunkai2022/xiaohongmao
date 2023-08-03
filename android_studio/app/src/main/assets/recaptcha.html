@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '%site_key%',
+          callback: function(token) {
+            BridgeWebViewClass.onSuccess(token);
+          },
+          "expired-callback": function() {
+           BridgeWebViewClass.expiredError();
+          },
+          "error-callback": function() {
+           BridgeWebViewClass.onError();
+          }
+        });
+        BridgeWebViewClass.onLoaded();
+      };
+    </script>
+</head>
+<body id="body">
+<div id="html_element"></div>
+<script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>
+

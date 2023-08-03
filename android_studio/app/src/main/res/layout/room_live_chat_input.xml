@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/room_ll_chat_bar" android:background="@color/black_trans_87" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/room_danmu" android:layout_width="wrap_content" android:layout_height="@dimen/room_chat_tool_element_height" android:layout_marginEnd="10dp">
+            <LinearLayout android:gravity="center" android:id="@+id/room_danmu_close" android:background="@drawable/danmu_moopen" android:layout_width="60dp" android:layout_height="match_parent">
+                <TextView android:textColor="@color/md_grey_800" android:gravity="center" android:background="@drawable/danmu_btn" android:layout_width="35dp" android:layout_height="35dp" android:text="@string/room_live_msg_danmu"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/room_danmu_open" android:background="@drawable/danmu_moopen" android:visibility="invisible" android:layout_width="60dp" android:layout_height="match_parent" android:layout_marginLeft="1dp">
+                <TextView android:textColor="@color/md_grey_800" android:gravity="center" android:background="@drawable/danmu_btn" android:layout_width="35dp" android:layout_height="35dp" android:text="弹幕"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/emojiBtn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zany_face"/>
+        <EditText android:textSize="14sp" android:textColor="@color/md_grey_200" android:textColorHint="#aab6b3b3" android:layout_gravity="center_vertical" android:id="@+id/room_edt_chat" android:background="@drawable/bkg_room_edt_chat" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="@dimen/room_chat_input_height" android:hint="说点什么吧..." android:maxEms="80" android:layout_weight="1" android:inputType="text" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@color/yunkacolor"/>
+        <Button android:textSize="@dimen/text_size_md_body" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/room_btn_send" android:background="@drawable/ic_chat_send" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginStart="15dp" android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/emoji" android:layout_width="match_parent" android:layout_height="300dp"/>
+</LinearLayout>

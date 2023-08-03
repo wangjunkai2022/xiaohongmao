@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_toolbar_user_profile" />
+    <include android:id="@id/lHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/toolbar" layout="@layout/header_layout_userprofile" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/chatFab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_message" android:tint="@color/md_grey_500" android:layout_marginEnd="20.0dip" android:elevation="@dimen/elevation_2dp" app:backgroundTint="@color/md_grey_50" app:layout_constraintBottom_toBottomOf="@id/lHeader" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/lHeader" app:rippleColor="@color/md_grey_400" />
+    <TextView android:id="@id/data" android:text="@string/info" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/lHeader" style="@style/SettingsItemHeaderText" />
+    <TextView android:id="@id/tvUserId" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/data" style="@style/UserProfileItemText" />
+    <TextView android:id="@id/tvUserIdHint" android:text="@string/user_id" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvUserId" style="@style/UserProfileItemTextHint" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutBio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvUserIdHint">
+        <TextView android:id="@id/tvUserBio" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/data" style="@style/UserProfileItemText" />
+        <TextView android:id="@id/tvUserBioHint" android:text="@string/dialog_update_bio_hint" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvUserId" style="@style/UserProfileItemTextHint" />. </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/md_grey_300" android:layout_width="fill_parent" android:layout_height="12.0dip" app:layout_constraintTop_toBottomOf="@id/layoutBio" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/divider" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tab" />
+    <FrameLayout android:id="@id/flLoading" android:background="#80ffffff" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

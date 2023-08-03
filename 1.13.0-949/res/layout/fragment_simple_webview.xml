@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:paddingTop="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" style="@style/ToolBar.Trans">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height">
+            <ImageButton android:id="@id/imgbtn_toolbar_back" android:visibility="gone" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" app:tint="@color/colorSecondaryText" style="@style/ToolBarBackButton" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/txt_color" android:id="@id/tv_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_loading" android:layout_centerInParent="true" android:layout_toEndOf="@id/imgbtn_toolbar_back" />
+            <ImageButton android:id="@id/toolbar_refresh" android:background="@color/transparent" android:layout_width="23.0dip" android:layout_height="23.0dip" android:src="@drawable/ic_refresh_gray" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" app:tint="@color/colorSecondaryText" />
+            <TextView android:textStyle="bold" android:textColor="@color/colorSecondaryText" android:id="@id/toolbar_close" android:background="?android:selectableItemBackground" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sym_heavy_close" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" style="@style/ToolBarTitle" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <ProgressBar android:id="@id/progress_bar" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/toolbar" style="?android:progressBarStyleHorizontal" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/web_svga" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/svga_top" android:scaleType="fitCenter" android:layout_below="@id/toolbar" app:clearsAfterStop="true" app:fillMode="Backward" app:loopCount="1" />
+    <com.qennnsad.aknkaksd.presentation.ui.room.view.PeerageLoginView android:id="@id/simple_peerage_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

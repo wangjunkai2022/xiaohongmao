@@ -1,0 +1,63 @@
+package com.jakewharton.rxbinding4.view;
+
+import android.view.MenuItem;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: MenuItemActionViewEvent.kt */
+@Metadata(bv = {}, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\u0086\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0002¢\u0006\u0004\b\u0011\u0010\u0012J\t\u0010\u0003\u001a\u00020\u0002HÆ\u0003J\u0013\u0010\u0005\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u0002HÆ\u0001J\t\u0010\u0007\u001a\u00020\u0006HÖ\u0001J\t\u0010\t\u001a\u00020\bHÖ\u0001J\u0013\u0010\r\u001a\u00020\f2\b\u0010\u000b\u001a\u0004\u0018\u00010\nHÖ\u0003R\u001a\u0010\u0004\u001a\u00020\u00028\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\u000e\u0010\u0010¨\u0006\u0013"}, d2 = {"Lcom/jakewharton/rxbinding4/view/a;", "Lcom/jakewharton/rxbinding4/view/b;", "Landroid/view/MenuItem;", "b", "menuItem", "c", "", "toString", "", "hashCode", "", "other", "", "equals", "a", "Landroid/view/MenuItem;", "()Landroid/view/MenuItem;", "<init>", "(Landroid/view/MenuItem;)V", "rxbinding_release"}, k = 1, mv = {1, 4, 0})
+/* loaded from: classes3.dex */
+public final class a extends b {
+    @m8.g
+
+    /* renamed from: a  reason: collision with root package name */
+    private final MenuItem f43836a;
+
+    public a(@m8.g MenuItem menuItem) {
+        super(null);
+        this.f43836a = menuItem;
+    }
+
+    public static /* synthetic */ a d(a aVar, MenuItem menuItem, int i4, Object obj) {
+        if ((i4 & 1) != 0) {
+            menuItem = aVar.a();
+        }
+        return aVar.c(menuItem);
+    }
+
+    @Override // com.jakewharton.rxbinding4.view.b
+    @m8.g
+    public MenuItem a() {
+        return this.f43836a;
+    }
+
+    @m8.g
+    public final MenuItem b() {
+        return a();
+    }
+
+    @m8.g
+    public final a c(@m8.g MenuItem menuItem) {
+        return new a(menuItem);
+    }
+
+    public boolean equals(@m8.h Object obj) {
+        if (this != obj) {
+            return (obj instanceof a) && Intrinsics.areEqual(a(), ((a) obj).a());
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        MenuItem a10 = a();
+        if (a10 != null) {
+            return a10.hashCode();
+        }
+        return 0;
+    }
+
+    @m8.g
+    public String toString() {
+        return "MenuItemActionViewCollapseEvent(menuItem=" + a() + ")";
+    }
+}

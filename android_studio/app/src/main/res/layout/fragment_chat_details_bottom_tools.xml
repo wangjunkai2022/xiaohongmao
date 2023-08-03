@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/md_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivHide" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_down" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:tint="@color/md_black"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llImageSelect" android:background="@drawable/ripple_item_press" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/llFileSelect" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_chat_details_boutton_image"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/gallery"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llFileSelect" android:background="@drawable/ripple_item_press" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/llCameraCapture" app:layout_constraintStart_toEndOf="@+id/llImageSelect" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_chat_details_button_file"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/activity_chat_details_tools_file"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llCameraCapture" android:background="@drawable/ripple_item_press" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/llFileSelect" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_camera"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/activity_chat_details_tools_camera"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:paddingTop="5dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/lay_portrait" android:clickable="false" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/item_competitor_portrait" android:layout_width="40dp" android:layout_height="40dp" fresco:actualImageResource="@drawable/ic_default_head_small" fresco:actualImageScaleType="2" fresco:fadeDuration="0" fresco:layout_constraintBottom_toBottomOf="0" fresco:layout_constraintEnd_toEndOf="0" fresco:layout_constraintStart_toStartOf="0" fresco:layout_constraintTop_toTopOf="0" fresco:placeholderImage="@drawable/ic_default_head_small" fresco:placeholderImageScaleType="2" fresco:roundAsCircle="true"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/frag_seat_item_bg" android:visibility="invisible" android:clickable="false" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/lay_portrait" android:layout_below="@+id/lay_portrait"/>
+    <LinearLayout android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_toRightOf="@+id/lay_portrait" android:layout_centerVertical="false" style="@style/gift_contributor_name_gender">
+        <TextView android:id="@+id/item_competitor_username" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cell_useritem_username"/>
+        <ImageView android:id="@+id/item_competitor_gender" style="@style/cell_useritem_gender_img"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <TextView android:textColor="@color/white" android:id="@+id/item_competitor_invite_btn" android:background="@drawable/btn_pk_random_selection" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请ta" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

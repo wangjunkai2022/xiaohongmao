@@ -1,0 +1,76 @@
+package f4;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import b4.b;
+
+/* compiled from: ItemChatDetailsStickerMeBinding.java */
+/* loaded from: classes3.dex */
+public final class s0 implements ViewBinding {
+    @NonNull
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f65745a;
+    @NonNull
+
+    /* renamed from: b  reason: collision with root package name */
+    public final ConstraintLayout f65746b;
+    @NonNull
+
+    /* renamed from: c  reason: collision with root package name */
+    public final ImageView f65747c;
+    @NonNull
+
+    /* renamed from: d  reason: collision with root package name */
+    public final ConstraintLayout f65748d;
+
+    private s0(@NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout2, @NonNull ImageView imageView, @NonNull ConstraintLayout constraintLayout3) {
+        this.f65745a = constraintLayout;
+        this.f65746b = constraintLayout2;
+        this.f65747c = imageView;
+        this.f65748d = constraintLayout3;
+    }
+
+    @NonNull
+    public static s0 a(@NonNull View view) {
+        ConstraintLayout constraintLayout = (ConstraintLayout) view;
+        int i4 = b.j.X8;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, i4);
+        if (imageView != null) {
+            i4 = b.j.wa;
+            ConstraintLayout constraintLayout2 = (ConstraintLayout) ViewBindings.findChildViewById(view, i4);
+            if (constraintLayout2 != null) {
+                return new s0(constraintLayout, constraintLayout, imageView, constraintLayout2);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i4)));
+    }
+
+    @NonNull
+    public static s0 c(@NonNull LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static s0 d(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z9) {
+        View inflate = layoutInflater.inflate(b.m.P1, viewGroup, false);
+        if (z9) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f65745a;
+    }
+}

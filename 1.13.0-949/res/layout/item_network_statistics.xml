@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/default_activity_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvHeader" android:text="@string/total" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SettingsItemHeaderText" />
+    <TextView android:layout_gravity="start" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:text="@string/bytes_received" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvHeader" style="@style/SettingsItemText" />
+    <TextView android:textColor="@color/header_text_settings" android:id="@id/tvReceived" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tvHeader" style="@style/SettingsItemText" />
+    <TextView android:layout_gravity="start" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:text="@string/bytes_sent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvReceived" style="@style/SettingsItemText" />
+    <TextView android:textColor="@color/header_text_settings" android:layout_gravity="end" android:id="@id/tvSent" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tvReceived" style="@style/SettingsItemText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

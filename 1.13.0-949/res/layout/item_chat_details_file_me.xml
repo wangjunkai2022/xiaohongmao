@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:paddingTop="@dimen/chats_list_message_padding" android:paddingBottom="@dimen/chats_list_message_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_chat_details_elements_me" />
+    <include layout="@layout/item_chat_details_elements_common" />
+    <androidx.cardview.widget.CardView android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" app:cardBackgroundColor="@color/im_me_message_bubble" app:cardCornerRadius="@dimen/im_message_bubble_general_rounding" app:cardElevation="@dimen/im_message_bubble_elevation" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tvTime" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/cb_select" app:layout_constraintTop_toBottomOf="@id/tvMessageTime">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/item_chat_details_extra" />
+            <include layout="@layout/item_chat_details_file" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

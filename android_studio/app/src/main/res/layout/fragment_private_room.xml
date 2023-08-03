@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black_trans_40" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/privater_room_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_room_blurred" android:scaleType="centerCrop"/>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <ImageView android:id="@+id/privater_room_dialog_close" android:background="@drawable/goprivate_room_closebg" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/privater_room_dialog_photo" android:background="@drawable/bg_circle" android:padding="1dp" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginTop="75dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/privater_room_dialog_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="主播名字" android:layout_below="@+id/privater_room_dialog_photo" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/privater_room_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_go_private_room_header" android:layout_below="@+id/privater_room_dialog_name" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/privater_room_dialog_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/goprivate_room_dialog_pwd" android:layout_below="@+id/privater_room_dialog_title" android:layout_centerHorizontal="true"/>
+        <include android:id="@+id/layout_pwd" layout="@layout/lay_room_dialog_password"/>
+        <include android:id="@+id/layout_ticket" layout="@layout/lay_room_dialog_ticket"/>
+        <include android:id="@+id/layout_level" layout="@layout/lay_room_dialog_level"/>
+        <include android:id="@+id/layout_time" layout="@layout/lay_room_dialog_time"/>
+        <include android:id="@+id/layout_video" layout="@layout/lay_room_dialog_video"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_guest_preview_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

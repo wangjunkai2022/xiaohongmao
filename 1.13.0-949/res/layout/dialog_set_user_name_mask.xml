@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_normal" android:gravity="center" android:layout_gravity="center" android:id="@id/etUserNameMask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/dialog_update_user_name_mask_hint" android:maxLines="1" android:maxLength="30" android:inputType="textCapWords" android:layout_marginStart="@dimen/chats_list_item_margin" android:layout_marginEnd="@dimen/chats_list_item_margin" />
+    <TextView android:textSize="@dimen/text_small" android:gravity="center" android:id="@id/disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_update_user_name_mask_disclaimer" android:layout_marginStart="@dimen/chats_list_item_margin" android:layout_marginEnd="@dimen/chats_list_item_margin" />
+</LinearLayout>

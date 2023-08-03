@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="10dp">
+    <View android:background="@drawable/shape_chat_details_audio_oval" android:layout_width="14dp" android:layout_height="14dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/md_grey_902" android:id="@+id/tvRecordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="40dp">
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_activity_back" android:scaleType="fitXY" android:tint="@color/md_second_text_color"/>
+        <TextView android:textSize="12sp" android:textColor="@color/md_second_text_color" android:id="@+id/tvLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_chat_details_left_swipe_cancel" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" package="com.didi.live.spring" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:maxSdkVersion="21" android:name="android.permission.READ_PHONE_STATE"/>
+    <meta-data android:name="android.max_aspect" android:value="2.1"/>
+    <queries>
+        <package android:name="com.dada.live.superstar"/>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+    </queries>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.qennnsad.aknkaksd.BeautyLiveApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.module.auth.AuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.module.auth.GuestLinkPhoneNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="com.qennnsad.aknkaksd.presentation.module.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.qennnsad.aknkaksd.presentation.ui.MainContainerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.didi.live" android:path="/gameHall" android:scheme="live1975212"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.qennnsad.aknkaksd.presentation.ui.room.PusherRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.qennnsad.aknkaksd.presentation.ui.room.RoomActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:maxAspectRatio="2.4" android:name="com.qennnsad.aknkaksd.presentation.ui.room.player.player.PlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:maxAspectRatio="2.4" android:name="com.qennnsad.aknkaksd.presentation.ui.room.player.player.PkRightPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.qennnsad.aknkaksd.presentation.module.main.webview.SimpleWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.didi.live" android:path="/webView" android:scheme="live1975212"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.module.main.profile.UserProfileActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:icon="@mipmap/ic_launcher" android:name="com.qennnsad.aknkaksd.data.websocket.WebSocketService"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.module.contributors.ContributorsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.ui.room.manage.AdminListActivity"/>
+        <meta-data android:name="jp.line.sdk.ChannelId" android:value="1000000001"/>
+        <meta-data android:name="jp.line.sdk.AuthScheme" android:value="0"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.qennnsad.aknkaksd.presentation.ui.room.publish.screen.PublishScreenService" android:stopWithTask="true"/>
+        <activity android:name="screenstreamer.capture.ScreenCapture$ScreenCaptureAssistantActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.ui.chat.im.settings.DataUsageActivity"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.ui.chat.im.chat_requests.FriendRequestActivity"/>
+        <activity android:name="com.qennnsad.aknkaksd.presentation.ui.chat.im.ChatDetailsActivity" android:screenOrientation="portrait" android:theme="@style/ChatTheme" android:windowSoftInputMode="stateHidden"/>
+        <provider android:authorities="com.didi.live.spring.versionprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.qennnsad.aknkaksd.data.AppUpdateFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.didi.live.spring.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.SentryInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.PosthogInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.RxInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.FrescoInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.IMInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.RetrofitUrlManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.qennnsad.aknkaksd.initializers.OverseasInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="io.sentry.dsn" android:value="https://0c2e8619369c424dbaec9aa1e2965d64@ingest.sentry.northmarlin.com/3"/>
+        <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0"/>
+        <meta-data android:name="io.sentry.traces.user-interaction.enable" android:value="true"/>
+        <activity android:name="com.lljjcoder.style.citylist.CityListSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateUnchanged"/>
+        <activity android:name="com.lljjcoder.style.citythreelist.ProvinceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateUnchanged"/>
+        <activity android:name="com.lljjcoder.style.citythreelist.CityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateUnchanged"/>
+        <activity android:name="com.lljjcoder.style.citythreelist.AreaActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateUnchanged"/>
+        <provider android:authorities="com.didi.live.spring.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.didi.live.spring.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.im.freechat.ImFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_path"/>
+        </provider>
+        <service android:name="com.im.freechat.data.sources.websocket.WsService"/>
+        <activity android:name="com.tangxiaolv.telegramgallery.GalleryActivity"/>
+        <activity android:enabled="false" android:exported="true" android:name="com.im.freechat.ui.main.DeeplinkComponent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inviter.testwebmessenger.ml" android:pathPattern="/im/conversations/.*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="layoutDirection|orientation|screenSize" android:launchMode="singleTop" android:name="com.im.freechat.ui.chat.message_gallery.MessageGalleryActivity"/>
+        <service android:enabled="true" android:exported="false" android:name="com.im.freechat.service.music.MusicService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.im.freechat.ui.image_editor.ImageEditorActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <uses-library android:name="android.test.base" android:required="false"/>
+        <uses-library android:name="android.test.mock" android:required="false"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:name="com.tangxiaolv.telegramgallery.ImageEditorActivity"/>
+        <activity android:exported="true" android:label="@string/iamutkarshtiwari_github_io_ananas_library_name" android:name="iamutkarshtiwari.github.io.ananas.editimage.EditImageActivity"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.didi.live.spring.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+    </application>
+</manifest>

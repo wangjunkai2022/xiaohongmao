@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/initialImage" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="fitCenter" app:fadeDuration="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/errorView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textColor="@color/gph_white" android:gravity="center" android:id="@id/errorMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/gph_video_error" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.giphy.sdk.ui.views.VideoBufferingIndicator android:id="@id/bufferingAnimation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/simpleProgressBar" android:layout_width="fill_parent" android:layout_height="20.0dip" android:indeterminate="true" android:indeterminateTint="@color/video_buffering_indicator" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </com.giphy.sdk.ui.views.VideoBufferingIndicator>
+    <com.giphy.sdk.ui.views.GPHVideoControls android:id="@id/videoControls" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

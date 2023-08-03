@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/room_fragment_root" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/room_fragment_view_root" android:paddingTop="0.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/room_move_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/playerContainer" layout="@layout/pk_double_video_watcher_ksy" />
+            <ImageView android:id="@id/img_thumb" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" />
+            <com.qennnsad.aknkaksd.presentation.ui.room.view.BlockTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/room_block" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="直播整改中" />
+            <ImageView android:id="@id/iv_watermark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+            <TextView android:textColor="@color/white_trans_40" android:id="@id/tv_resolution_info" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+            <include android:id="@id/top_audience" layout="@layout/room_top_audience_bar" />
+            <include android:id="@id/animations" layout="@layout/room_live_anim" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.PublicChatLinearLayout android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_weight="0.17" android:layout_marginEnd="@dimen/live_chat_margin_right">
+                                <com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.PubChatRecyclerView android:id="@id/room_recycler_chat" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+                            </com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.PublicChatLinearLayout>
+                        </LinearLayout>
+                        <include android:id="@id/live_operation" layout="@layout/room_live_operation" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <include android:id="@id/gift_actions_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/ll_bottom" layout="@layout/room_live_local_gift_list" />
+            <include android:id="@id/peerage_animation_container" layout="@layout/layout_svga_anims_watcher" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/side_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="50.0dip" android:layout_marginEnd="@dimen/margin_4dp" android:layout_alignParentEnd="true" layout="@layout/room_buttons_side_pane" />
+    <RelativeLayout android:background="@drawable/bg_room_blurred" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/room_layout_loading_avatar" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="16.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/room_layout_loading_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_below="@id/room_layout_loading_avatar" android:layout_centerHorizontal="true">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_room_loading" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/ic_loading_live" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

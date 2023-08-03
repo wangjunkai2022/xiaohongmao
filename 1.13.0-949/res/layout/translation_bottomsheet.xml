@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/translation_row_audio" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout style="@style/Setting.Item">
+            <ImageView android:id="@id/ic_audio" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/im_audio_animation_list_left_3" android:layout_centerVertical="true" android:layout_marginStart="@dimen/setting_left_padding" app:tint="@color/main_color" />
+            <TextView android:textSize="@dimen/text_size_md_subheading" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_translation" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_toEndOf="@id/ic_audio" />
+            <Switch android:id="@id/sw_option_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/thumb" android:track="@drawable/track" style="@style/GlobalRightArrow" />
+        </RelativeLayout>
+        <View android:visibility="visible" android:layout_alignParentBottom="true" style="@style/ViewDivider.PxHorizontal" />
+    </LinearLayout>
+    <RelativeLayout style="@style/Setting.Item">
+        <ImageView android:id="@id/ic_chat" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_edit" android:layout_centerVertical="true" android:layout_marginStart="@dimen/setting_left_padding" app:tint="@color/main_color" />
+        <TextView android:textSize="@dimen/text_size_md_subheading" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_translation" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_toEndOf="@id/ic_chat" />
+        <Switch android:id="@id/sw_option_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/thumb" android:track="@drawable/track" style="@style/GlobalRightArrow" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/auth_nav" app:startDestination="@+id/loginFragment">
+    <fragment android:name="com.qennnsad.aknkaksd.presentation.module.auth.login.LoginFragment" android:id="@+id/loginFragment">
+        <action android:id="@+id/action_loginFragment_to_findPassFragment" app:destination="@+id/findPassFragment"/>
+        <action android:id="@+id/action_loginFragment_to_signUpFragment" app:destination="@+id/signUpNavigation"/>
+    </fragment>
+    <fragment android:name="com.qennnsad.aknkaksd.presentation.module.auth.findpass.RestorePasswordFragment" android:id="@+id/findPassFragment"/>
+    <navigation android:id="@+id/signUpNavigation" app:startDestination="@+id/signUpFragment">
+        <fragment android:name="com.qennnsad.aknkaksd.presentation.module.auth.signup.SignUpFragment" android:id="@+id/signUpFragment">
+            <action android:id="@+id/action_signUpFragment_to_finishSignUpFragment" app:destination="@+id/finishSignUpFragment"/>
+        </fragment>
+        <fragment android:label="FinishSignUpFragment" android:name="com.qennnsad.aknkaksd.presentation.module.auth.signup.FinishSignUpFragment" android:id="@+id/finishSignUpFragment">
+            <argument android:name="isFromGuestLinking" android:defaultValue="false" app:argType="boolean"/>
+        </fragment>
+    </navigation>
+</navigation>

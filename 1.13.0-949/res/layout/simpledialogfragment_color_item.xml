@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/ripple" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/checkmark" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip" android:src="@drawable/ic_check_white" android:scaleType="fitCenter" />
+</FrameLayout>

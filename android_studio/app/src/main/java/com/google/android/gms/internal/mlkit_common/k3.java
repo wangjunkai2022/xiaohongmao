@@ -1,0 +1,59 @@
+package com.google.android.gms.internal.mlkit_common;
+
+import com.google.firebase.encoders.c;
+import java.io.IOException;
+
+/* compiled from: com.google.mlkit:common@@18.4.0 */
+/* loaded from: classes2.dex */
+final class k3 implements com.google.firebase.encoders.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final k3 f29765a = new k3();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final com.google.firebase.encoders.c f29766b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final com.google.firebase.encoders.c f29767c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final com.google.firebase.encoders.c f29768d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final com.google.firebase.encoders.c f29769e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final com.google.firebase.encoders.c f29770f;
+
+    static {
+        c.b a10 = com.google.firebase.encoders.c.a("remoteModelOptions");
+        d0 d0Var = new d0();
+        d0Var.a(1);
+        f29766b = a10.b(d0Var.b()).a();
+        c.b a11 = com.google.firebase.encoders.c.a("localModelOptions");
+        d0 d0Var2 = new d0();
+        d0Var2.a(2);
+        f29767c = a11.b(d0Var2.b()).a();
+        c.b a12 = com.google.firebase.encoders.c.a("errorCodes");
+        d0 d0Var3 = new d0();
+        d0Var3.a(3);
+        f29768d = a12.b(d0Var3.b()).a();
+        c.b a13 = com.google.firebase.encoders.c.a("modelInitializationMs");
+        d0 d0Var4 = new d0();
+        d0Var4.a(4);
+        f29769e = a13.b(d0Var4.b()).a();
+        c.b a14 = com.google.firebase.encoders.c.a("isNnApiEnabled");
+        d0 d0Var5 = new d0();
+        d0Var5.a(5);
+        f29770f = a14.b(d0Var5.b()).a();
+    }
+
+    private k3() {
+    }
+
+    @Override // com.google.firebase.encoders.d, com.google.firebase.encoders.b
+    public final /* bridge */ /* synthetic */ void a(Object obj, com.google.firebase.encoders.e eVar) throws IOException {
+        c7 c7Var = (c7) obj;
+        throw null;
+    }
+}

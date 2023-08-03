@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/private_type_dialog_rootlayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/private_tyep_cancel" android:background="@drawable/private_type_dialog_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="取消" android:layout_alignParentBottom="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/private_type_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_above="@+id/private_tyep_cancel">
+        <TextView android:textSize="18sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="50dp" android:text="选择直播入场方式"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_tyep_recovery" android:layout_width="match_parent" android:layout_height="50dp" android:text="公开直播"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_tyep_password" android:layout_width="match_parent" android:layout_height="50dp" android:text="密码进房"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_tyep_ticket" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/get_bi"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_tyep_level" android:layout_width="match_parent" android:layout_height="50dp" android:text="限制等级"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="20sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_tyep_time" android:layout_width="match_parent" android:layout_height="50dp" android:text="计时收费"/>
+    </LinearLayout>
+</RelativeLayout>

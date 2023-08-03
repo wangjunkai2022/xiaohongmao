@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dip" android:width="68.0dip" android:viewportWidth="68.0" android:viewportHeight="28.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$btn_pk_random_selection__0" android:pathData="M14,0L54,0A14,14 0,0 1,68 14L68,14A14,14 0,0 1,54 28L14,28A14,14 0,0 1,0 14L0,14A14,14 0,0 1,14 0z" />
+</vector>

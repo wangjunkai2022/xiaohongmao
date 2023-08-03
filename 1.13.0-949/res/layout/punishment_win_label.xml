@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="11.0dip" android:textStyle="bold|italic" android:textColor="@color/white" android:gravity="end" android:layout_gravity="center" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="胜利者" android:fontFamily="@font/mfyuanhei_noncommercial_regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

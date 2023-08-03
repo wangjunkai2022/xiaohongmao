@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_nav" app:startDestination="@id/mainFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MainFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.MainFragment" android:id="@id/mainFragment">
+        <action android:id="@id/toSettings" app:destination="@id/settingsFragment" />
+        <action android:id="@id/toEditProfile" app:destination="@id/editProfileFragment" />
+        <action android:id="@id/toSearchUser" app:destination="@id/searchUserFragment" />
+        <action android:id="@id/toFollowers" app:destination="@id/followersFragment" />
+    </fragment>
+    <fragment android:label="SearchUserFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.search.SearchUserFragment" android:id="@id/searchUserFragment">
+        <action android:id="@id/toUserProfile" app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment android:label="UserProfileFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.profile.UserProfileFragment" android:id="@id/userProfileFragment">
+        <argument android:name="user_id" app:argType="string" />
+    </fragment>
+    <fragment android:label="EditProfileFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.me.edit.EditProfileFragment" android:id="@id/editProfileFragment" />
+    <fragment android:label="FollowersFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.followers.FollowersFragment" android:id="@id/followersFragment">
+        <argument android:name="user_id" app:argType="string" />
+        <argument android:name="is_followees" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/toSearchUser" app:destination="@id/searchUserFragment" />
+        <action android:id="@id/toUserProfile" app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment android:label="SettingsFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.setting.SettingsFragment" android:id="@id/settingsFragment">
+        <action android:id="@id/toBlacklist" app:destination="@id/blacklistFragment" />
+        <action android:id="@id/toModifyPassword" app:destination="@id/modifyPasswordFragment" />
+    </fragment>
+    <fragment android:label="BlacklistFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.setting.BlacklistFragment" android:id="@id/blacklistFragment" />
+    <fragment android:label="ModifyPasswordFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.setting.ModifyPasswordFragment" android:id="@id/modifyPasswordFragment" />
+</navigation>

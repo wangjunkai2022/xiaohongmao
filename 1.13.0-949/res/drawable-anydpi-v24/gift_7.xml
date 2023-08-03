@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="15.0dip" android:viewportWidth="15.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$gift_7__0" android:pathData="M13.8711,6.9375C13.8711,6.6614 13.6472,6.4375 13.3711,6.4375H1.3125C1.0364,6.4375 0.8125,6.6614 0.8125,6.9375V9.5742C0.8125,9.8504 1.0364,10.0742 1.3125,10.0742H9.0301L2.7562,23.792C2.6854,23.9468 2.6983,24.127 2.7902,24.2702C2.8822,24.4134 3.0407,24.5 3.2109,24.5H6.7734C6.9728,24.5 7.1531,24.3816 7.2323,24.1986L13.83,8.9525C13.8571,8.8898 13.8711,8.8222 13.8711,8.7539V6.9375Z" android:strokeColor="@drawable/$gift_7__1" android:strokeWidth="1.0" android:strokeLineJoin="round" />
+</vector>

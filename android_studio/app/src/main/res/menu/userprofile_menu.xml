@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_person_add" android:id="@+id/action_follow" android:title="@string/activity_follow_user" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_person_add" android:id="@+id/action_unfollow" android:title="@string/activity_unfollow_user" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_block" android:id="@+id/action_block" android:title="@string/activity_block_user" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_block" android:id="@+id/action_unblock" android:title="@string/activity_unblock_user" app:showAsAction="never"/>
+</menu>

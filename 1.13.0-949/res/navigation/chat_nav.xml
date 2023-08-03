@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/chat_navigation" app:startDestination="@id/chatDetailsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.im.freechat.ui.chat.chatdetails.ChatDetailsFragment" android:id="@id/chatDetailsFragment">
+        <action android:id="@id/action_chatDetailsFragment_to_groupManagerFragment" app:destination="@id/groupManagerFragment" />
+        <action android:id="@id/action_chatDetailsFragment_to_chatSelectorFragment" app:destination="@id/chatSelectorFragment" />
+        <action android:id="@id/action_chatDetailsFragment_to_UserProfileFragment" app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment android:name="com.im.freechat.ui.chat.group_manager.GroupManagerFragment" android:id="@id/groupManagerFragment">
+        <argument android:name="chatId" app:argType="string" />
+        <action android:id="@id/action_groupManagerFragment_to_userProfileFragment" app:destination="@id/userProfileFragment" />
+        <action android:id="@id/action_groupManagerFragment_to_chatDetailsFragment" app:destination="@id/chatDetailsFragment" />
+        <action android:id="@id/action_groupManagerFragment_to_chatSelectorFragment" app:destination="@id/chatSelectorFragment" />
+    </fragment>
+    <fragment android:name="com.im.freechat.ui.chat.userprofile.UserProfileFragment" android:id="@id/userProfileFragment">
+        <argument android:name="contactId" app:argType="integer" />
+        <argument android:name="fromUserSingleChat" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_userProfileFragment_to_chatDetailsFragment" app:destination="@id/chatDetailsFragment" />
+        <action android:id="@id/action_userProfileFragment_to_chatSelectorFragment" app:destination="@id/chatSelectorFragment" />
+    </fragment>
+    <fragment android:name="com.im.freechat.ui.chat.chat_selector.ChatSelectorFragment" android:id="@id/chatSelectorFragment">
+        <argument android:name="forwardedMessageIds" app:argType="string[]" />
+        <argument android:name="chatId" app:argType="string" />
+    </fragment>
+</navigation>

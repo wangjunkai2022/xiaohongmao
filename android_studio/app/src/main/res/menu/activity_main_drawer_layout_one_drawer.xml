@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:icon="@drawable/ic_chat_single_chat" android:id="@+id/menuSingleChat" android:title="@string/activity_chose_new_chat_type_single"/>
+        <item android:icon="@drawable/ic_chat_group_chat" android:id="@+id/menuGroupChat" android:visible="false" android:title="@string/activity_chose_new_chat_type_group"/>
+        <item android:icon="@drawable/ic_chat_chat_room" android:id="@+id/menuChatRoom" android:visible="false" android:title="@string/activity_chose_new_chat_type_chat_room"/>
+        <item android:icon="@drawable/ic_contact_list" android:id="@+id/menuContactList" android:title="@string/activity_contacts"/>
+        <item android:icon="@drawable/ic_settings" android:id="@+id/menuSettings" android:title="@string/menu_settings"/>
+        <item android:icon="@drawable/ic_im_user_logout" android:id="@+id/menuLogout" android:title="@string/activity_main_login_out"/>
+    </group>
+</menu>

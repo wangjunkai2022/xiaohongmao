@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15.0dip" app:cardElevation="1.0dip" app:contentPadding="15.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/rgb_444444" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/white" />
+            <TextView android:textSize="@dimen/text_size_md_subheading" android:textColor="@color/rgb_444444" android:gravity="center" android:id="@id/dialog_message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_content_margin" android:layout_marginBottom="@dimen/dialog_content_margin" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <Button android:textSize="@dimen/text_size_md_subheading" android:textColor="@color/black" android:id="@id/dialog_message_cancel" android:background="@drawable/shape_btn_gray_rounded" android:layout_width="0.0dip" android:layout_height="@dimen/dialog_btn_height" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" android:backgroundTint="@color/color_gray_d9d9d9" />
+                <Button android:textSize="@dimen/text_size_md_subheading" android:textColor="@drawable/sel_btn_txt_color" android:id="@id/dialog_message_commit" android:background="@drawable/shape_follow_btn_horiz" android:layout_width="0.0dip" android:layout_height="@dimen/dialog_btn_height" android:text="@string/commit" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

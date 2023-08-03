@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_nav" app:startDestination="@id/indexFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="IndexFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.index.IndexFragment" android:id="@id/indexFragment" />
+    <fragment android:label="RankFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.rank.MainRankFragment" android:id="@id/rankFragment" />
+    <fragment android:label="MallFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.main.mall.MallFragment" android:id="@id/mallFragment" />
+    <fragment android:label="ChatFragment" android:name="com.qennnsad.aknkaksd.presentation.ui.chat.im.ChatFragment" android:id="@id/chatFragment" />
+    <fragment android:label="MeFragment" android:name="com.qennnsad.aknkaksd.presentation.module.main.me.MeProfileFragment" android:id="@id/meFragment" />
+</navigation>

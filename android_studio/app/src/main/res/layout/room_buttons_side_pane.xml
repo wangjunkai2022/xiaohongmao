@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/layout_fanclub_btns" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_fan_club" android:background="@drawable/ic_fan_club" android:padding="4dp" android:layout_width="@dimen/room_side_panel_button_size" android:layout_height="@dimen/room_side_panel_button_size" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|top" android:id="@+id/tv_fan_club_indicator" android:background="@drawable/bg_fan_indicator" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="4dp"/>
+    </FrameLayout>
+    <com.qennnsad.aknkaksd.presentation.ui.widget.carousel.LayoutCarousel android:id="@+id/layout_carousel" android:layout_width="@dimen/room_side_panel_button_size" android:layout_height="@dimen/room_side_panel_button_size" android:layout_marginTop="5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/btn_fan_club"/>
+</LinearLayout>

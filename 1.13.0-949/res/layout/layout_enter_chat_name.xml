@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/convNameLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_activity_margin" android:layout_marginStart="@dimen/default_activity_margin">
+        <FrameLayout android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/md_white" android:gravity="center" android:id="@id/tvGroupAvatar" android:background="@drawable/shape_item_chat_name" android:layout_width="60.0dip" android:layout_height="60.0dip" android:textAllCaps="true" />
+            <ImageView android:id="@id/ivAvatar" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <ImageView android:layout_gravity="end|bottom|center" android:background="@drawable/shape_item_chat_name" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_im_edit" android:scaleType="fitCenter" android:backgroundTint="@color/imAccent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/avatarLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <EditText android:id="@id/etConvName" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_chat_name" android:maxLines="1" android:inputType="textCapSentences|textNoSuggestions" android:imeOptions="actionDone" android:paddingEnd="8.0dip" android:layout_marginStart="@dimen/default_activity_margin" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/default_activity_margin" android:layout_marginBottom="@dimen/default_activity_margin" style="@style/Divider.Bold" />
+</LinearLayout>

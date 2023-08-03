@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="812.0dip" android:width="375.0dip" android:viewportWidth="375.0" android:viewportHeight="812.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:pathData="M-89,812l553,0l0,-830l-553,-0z" />
+    <path android:fillColor="@drawable/$bg_splash_main__0" android:pathData="M-89,812l553,0l0,-830l-553,-0z" />
+</vector>

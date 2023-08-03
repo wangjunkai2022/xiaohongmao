@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_more_vert" android:id="@+id/more" android:orderInCategory="101" android:title="" app:iconTint="@color/im_text_primary" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ic_im_menu_search" android:id="@+id/action_search_group" android:title="@string/menu_title_search" app:showAsAction="withText|always"/>
+            <item android:icon="@drawable/ic_clear_history" android:id="@+id/action_clear_history" android:title="@string/activity_main_chat_clear_history" app:showAsAction="withText|always"/>
+            <item android:icon="@drawable/ic_exit_group" android:id="@+id/action_leave" android:title="@string/activity_main_chat_delete_group" app:showAsAction="withText|always"/>
+        </menu>
+    </item>
+</menu>

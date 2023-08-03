@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/color_accent" android:paddingTop="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" style="@style/ToolBar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <ImageButton android:id="@+id/imgbtn_toolbar_back" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" style="@style/ToolBarBackButton"/>
+            <TextView android:textSize="@dimen/text_size_md_title" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/star_people" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_search" android:background="@drawable/sel_me_btn_bg" android:padding="11dp" android:layout_width="@dimen/toolbar_height" android:layout_height="match_parent" android:src="@drawable/ic_chat_subscribe" android:layout_alignParentEnd="true" app:tint="@color/white"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_followers" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView android:textSize="@dimen/text_size_md_body" android:textColor="@color/colorPrimaryText" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableTopCompat="@drawable/ic_search_not_found" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

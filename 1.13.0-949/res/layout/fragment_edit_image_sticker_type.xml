@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_banner_height" android:flipInterval="1000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back_to_main" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/image_edit_back" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/stickers_type_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back_to_type" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/image_edit_back" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/stickers_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+</ViewFlipper>

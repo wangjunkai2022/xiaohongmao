@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="27.0" android:viewportHeight="27.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="mirrorGroup" android:pivotX="13.5" android:scaleX="-1.0">
+        <path android:fillColor="#ffffffff" android:pathData="M15.3929,23.7887L26.3369,12.6458L15.3929,1.5029V7.7708C9.0255,7.7707 0.9668,10.7554 0.9668,25.1815C3.5535,16.4263 14.597,17.3218 15.3929,17.3218V23.7887Z" />
+    </group>
+</vector>

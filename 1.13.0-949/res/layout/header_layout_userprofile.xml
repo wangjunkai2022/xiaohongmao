@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/imToolbarColor" android:padding="@dimen/activity_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/tvAvatarPlaceholder" android:layout_width="@dimen/chats_list_item_height_small" android:layout_height="@dimen/chats_list_item_height_small" style="@style/textAvatarPlaceHolder" />
+        <ImageView android:id="@id/ivIcon" android:layout_width="@dimen/chats_list_item_height_small" android:layout_height="@dimen/chats_list_item_height_small" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/md_white" android:id="@id/tvNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/activity_padding" app:layout_constraintBottom_toTopOf="@id/tvLastOnline" app:layout_constraintStart_toEndOf="@id/flAvatar" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/md_white_trans_6" android:id="@id/tvLastOnline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/activity_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/flAvatar" app:layout_constraintTop_toBottomOf="@id/tvNickname" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeToRefresh" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView app:cardCornerRadius="12dp" style="@style/AnchorsGridCardStyle">
+            <FrameLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:layout_gravity="center_horizontal" android:id="@+id/loadingHeader" android:padding="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_loading"/>
+                <LinearLayout android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/loadingFooter" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="@color/grey" android:indeterminateTintMode="src_in" style="?android:attr/progressBarStyleSmall"/>
+                    <TextView android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_loading"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recommend_anchor_recycler" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="2"/>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@+id/followed_anchor_rl_no_live" android:background="@drawable/bkg_followed_no_live" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/followed_no_live_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_md_caption" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/followed_no_live_tip"/>
+            <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/followed_anchor_tv_view_hot" android:background="@drawable/shape_followed_goto_hot" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="10dp" android:text="@string/followed_goto_hot"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

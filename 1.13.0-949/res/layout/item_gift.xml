@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_gift_icon" android:layout_width="@dimen/item_gift_icon_size" android:layout_height="@dimen/item_gift_icon_size" android:src="@mipmap/ic_launcher" android:layout_centerInParent="true" fresco:actualImageScaleType="focusCrop" fresco:fadeDuration="300" fresco:placeholderImage="@drawable/ic_default_head_small" fresco:placeholderImageScaleType="fitCenter" />
+        <ImageView android:id="@id/item_gift_continue" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/icon_continue_gift" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/margin_micro" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/item_gift_toy" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/toy_tag" android:layout_below="@id/item_gift_continue" android:layout_marginStart="@dimen/margin_micro" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_md_smallest" android:textColor="@color/white" android:id="@id/item_gift_experience" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_gift_tv_margin" android:layout_marginBottom="@dimen/item_gift_tv_margin">
+        <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/coin_room_top_2" />
+        <TextView android:textSize="@dimen/text_size_md_smallest" android:textColor="@color/md_grey_200" android:id="@id/item_gift_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

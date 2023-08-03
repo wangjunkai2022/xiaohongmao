@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/welcome_doalog_content" android:paddingBottom="20.0dip" android:layout_width="0.0dip" android:layout_height="@dimen/welcome_dialog_height" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.8">
+        <FrameLayout android:gravity="center" android:background="@drawable/welcome_dialog_frame_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:layout_gravity="center|top" android:id="@id/dialog_hall_content_web" android:background="@color/transparent" android:scrollbars="none" android:clipToPadding="false" android:layout_width="290.0dip" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        </FrameLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/welcome_dialog_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/dialog_hall_iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_welcome_dialog_close" android:layout_centerHorizontal="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/welcome_doalog_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

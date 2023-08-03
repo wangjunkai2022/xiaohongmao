@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/private_type_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@id/private_setstring_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/room_private_pwd_title" />
+    <TextView android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@id/private_setstring_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/room_private_pwd_text" />
+    <EditText android:gravity="center_vertical" android:id="@id/private_setstring_edit" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:hint="@string/room_private_pwd_edit" android:maxLines="1" android:lines="1" android:inputType="text" android:imeOptions="actionDone" />
+    <View android:background="@color/global_setting_topline" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/yunkacolor" android:gravity="center" android:id="@id/private_setstring_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/global_setting_topline" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/yunkacolor" android:gravity="center" android:id="@id/private_setstring_commit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="保存" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

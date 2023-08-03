@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="20.0dip" />
+            <solid android:color="#ffe4e4e4" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/bg_fan_club_progress" android:scaleWidth="98%" />
+    </item>
+</layer-list>

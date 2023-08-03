@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/container_top_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginStart="16.0dip" app:layout_constraintEnd_toStartOf="@id/container_top_1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_ranking_pedestal" />
+    <include android:id="@id/container_top_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:layout_constraintEnd_toStartOf="@id/container_top_3" app:layout_constraintStart_toEndOf="@id/container_top_2" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_ranking_pedestal" />
+    <include android:id="@id/container_top_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/container_top_1" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_ranking_pedestal" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:background="@drawable/arc_bg_white_top_20" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/container_top_2">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/tv_empty_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排行榜暂无数据" android:layout_centerHorizontal="true" android:layout_centerVertical="false" app:drawableTopCompat="@drawable/empty" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/swipe_refresh_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

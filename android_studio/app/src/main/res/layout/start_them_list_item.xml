@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="#"/>
+            <TextView android:id="@+id/item_them_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="#"/>
+        </LinearLayout>
+        <TextView android:id="@+id/item_them_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/yunkacolor_h_4" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

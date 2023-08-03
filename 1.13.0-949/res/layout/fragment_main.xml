@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="45.0dip" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/main_bottomtab_container" android:background="@color/white" android:paddingBottom="5.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationZ="10.0dip" android:elevation="5.0dip">
+        <RelativeLayout android:id="@id/main_rl_index" android:layout_width="0.0dip" android:layout_height="@dimen/main_tab_height" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@drawable/sel_ic_tab_index" style="@style/MainBottomTabIconStyle" />
+                <TextView android:text="@string/sel_ic_tab_index_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/main_rl_ranking_list" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/main_tab_height" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@drawable/sel_ic_tab_ranking_list" style="@style/MainBottomTabIconStyle" />
+                <TextView android:text="@string/sel_ic_tab_rank_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/main_rl_push" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@color/transparent" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_tab_push" android:scaleType="centerCrop" android:paddingEnd="5.0dip" />
+                <TextView android:textColor="@color/md_red_600" android:gravity="center" android:layout_width="fill_parent" android:text="@string/sel_ic_tab_push_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="bottom" android:id="@id/main_imgbtn_room" android:paddingTop="3.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="@dimen/main_tab_room_icon_size" android:layout_height="@dimen/main_tab_room_icon_size" android:layout_marginLeft="3.0dip" android:src="@drawable/sel_ic_tab_room" />
+        <RelativeLayout android:id="@id/main_rl_mall" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/main_tab_height" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@drawable/sel_ic_tab_mall" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/main_tab_img_size" android:layout_height="@dimen/main_tab_img_size" android:layout_marginTop="@dimen/main_tab_margin_top" />
+                <TextView android:visibility="visible" android:text="@string/sel_ic_tab_mall_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/main_rl_chat" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/main_tab_height" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@drawable/sel_ic_tab_im" style="@style/MainBottomTabIconStyle" />
+                <TextView android:visibility="visible" android:text="@string/sel_ic_tab_im_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+            <ImageView android:id="@id/main_new_indicator" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/shape_circle_chat_indicator" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/main_rl_me" android:layout_width="0.0dip" android:layout_height="@dimen/main_tab_height" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageButton android:background="@drawable/sel_ic_tab_me" style="@style/MainBottomTabIconStyle" />
+                <TextView android:visibility="visible" android:text="@string/sel_ic_tab_me_title" style="@style/MainBottomTabTitleStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

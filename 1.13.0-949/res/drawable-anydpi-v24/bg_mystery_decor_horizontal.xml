@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="159.09299dip" android:width="80.0dip" android:viewportWidth="80.0" android:viewportHeight="159.093"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#00000000" android:pathData="M192.567,-97.787L14.185,79.524L192.567,256.835L192.567,-97.787Z" android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:strokeAlpha="0.11" />
+    <path android:fillColor="@drawable/$bg_mystery_decor_horizontal__0" android:pathData="M46.91,79.524L249.477,280.875L249.477,-121.827L46.91,79.524Z" android:fillAlpha="0.21" />
+    <path android:fillColor="#00000000" android:pathData="M239.477,-97.787L61.095,79.524L239.477,256.835L239.477,-97.787Z" android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:strokeAlpha="0.11" />
+</vector>

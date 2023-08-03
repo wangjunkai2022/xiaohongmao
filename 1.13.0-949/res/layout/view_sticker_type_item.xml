@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_banner_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:src="@drawable/yd_image_tx" android:scaleType="centerInside" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

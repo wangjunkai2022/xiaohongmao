@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="8.0dip" app:counterOverflowTextAppearance="@style/OverflowText">
+        <eltos.simpledialogfragment.input.TextInputAutoCompleteTextView android:id="@id/editText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

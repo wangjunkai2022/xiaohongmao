@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/arc_bg_white_top_24dp" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/popup_feel_no" style="@style/Setting.Item">
+        <TextView android:id="@id/edit_profile_tv_no_label" android:text="@string/popup_feel_secret" style="@style/Setting.ItemLeftText" />
+        <ImageView android:id="@id/popup_feel_no_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_unselected" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/setting_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Setting.ItemDivider" />
+    <RelativeLayout android:id="@id/popup_feel_lonely" style="@style/Setting.Item">
+        <TextView android:id="@id/edit_profile_tv_lonely_label" android:text="@string/popup_feel_lonely" style="@style/Setting.ItemLeftText" />
+        <ImageView android:id="@id/edit_profile_tv_lonely" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_unselected" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/setting_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Setting.ItemDivider" />
+    <RelativeLayout android:id="@id/popup_feel_love" style="@style/Setting.Item">
+        <TextView android:id="@id/edit_profile_tv_love_label" android:text="@string/popup_feel_love" style="@style/Setting.ItemLeftText" />
+        <ImageView android:id="@id/edit_profile_tv_love" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_unselected" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/setting_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Setting.ItemDivider" />
+    <RelativeLayout android:id="@id/popup_feel_married" style="@style/Setting.Item">
+        <TextView android:id="@id/edit_profile_tv_married_label" android:text="@string/popup_feel_married" style="@style/Setting.ItemLeftText" />
+        <ImageView android:id="@id/edit_profile_tv_married" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_unselected" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/setting_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Setting.ItemDivider" />
+    <RelativeLayout android:id="@id/popup_feel_gay" style="@style/Setting.Item">
+        <TextView android:id="@id/edit_profile_tv_gay_label" android:text="@string/popup_feel_gay" style="@style/Setting.ItemLeftText" />
+        <ImageView android:id="@id/edit_profile_tv_gay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_unselected" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/setting_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

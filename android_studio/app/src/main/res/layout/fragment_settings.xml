@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="@string/privacy_and_security" style="@style/SettingsItemHeaderText"/>
+    <TextView android:id="@+id/tv_data_usage" android:text="@string/disk_and_network_usage" style="@style/SettingsItemText"/>
+    <TextView android:id="@+id/tv_clear_all" android:text="@string/settings_clear_all" style="@style/SettingsItemText"/>
+    <CheckedTextView android:gravity="center_vertical" android:id="@+id/cb_show_last_online" android:checked="true" android:checkMark="?android:attr/listChoiceIndicatorMultiple" android:text="@string/setting_show_last_online" style="@style/SettingsItemText"/>
+    <TextView android:text="@string/notifications_sounds" style="@style/SettingsItemHeaderText"/>
+    <CheckedTextView android:gravity="center_vertical" android:id="@+id/cb_notifications" android:checked="true" android:checkMark="?android:attr/listChoiceIndicatorMultiple" android:text="@string/setting_notifications" style="@style/SettingsItemText"/>
+    <CheckedTextView android:gravity="center_vertical" android:id="@+id/cb_sounds" android:checked="true" android:checkMark="?android:attr/listChoiceIndicatorMultiple" android:text="@string/setting_sounds" style="@style/SettingsItemText"/>
+</LinearLayout>

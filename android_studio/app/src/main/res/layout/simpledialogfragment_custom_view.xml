@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:requiresFadingEdge="vertical">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/textSpacerNoTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <TextView android:id="@+id/customMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:paddingStart="?attr/dialogPreferredPadding" android:paddingEnd="?attr/dialogPreferredPadding" style="@style/TextAppearance.AppCompat.Subhead"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/customView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_more_vert" android:orderInCategory="101" android:title="" app:iconTint="@color/im_text_primary" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ic_im_menu_search" android:id="@id/action_search_chat" android:title="@string/menu_title_search" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_person_add" android:id="@id/action_add_to_contacts" android:title="@string/activity_follow_user" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_person_add" android:id="@id/action_remove_from_contacts" android:title="@string/activity_unfollow_user" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_block" android:id="@id/action_block" android:title="@string/activity_block_user" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_block" android:id="@id/action_unblock" android:title="@string/activity_unblock_user" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_clear_history" android:id="@id/action_clear_history" android:title="@string/activity_main_chat_clear_history" app:showAsAction="always|withText" />
+            <item android:icon="@drawable/ic_exit_group" android:id="@id/action_delete_chat" android:title="@string/activity_main_chat_delete_group" app:showAsAction="always|withText" />
+        </menu>
+    </item>
+</menu>

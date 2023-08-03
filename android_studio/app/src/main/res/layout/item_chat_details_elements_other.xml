@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/flAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chats_list_item_margin" android:layout_marginRight="@dimen/chats_list_item_margin" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/cb_select">
+        <TextView android:id="@+id/tvAvatarPlaceholder" style="@style/textAvatarPlaceHolder"/>
+        <ImageView android:id="@+id/ivIcon" android:layout_width="@dimen/chats_list_avatar_size" android:layout_height="@dimen/chats_list_avatar_size"/>
+    </FrameLayout>
+</merge>

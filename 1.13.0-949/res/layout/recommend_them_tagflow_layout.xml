@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zhy="http://schemas.android.com/apk/res-auto">
+    <com.zhy.view.flowlayout.TagFlowLayout android:id="@id/id_flowlayout" android:background="@color/yunkacolor_h_2" android:layout_width="fill_parent" android:layout_height="wrap_content" zhy:max_select="9" />
+    <TextView android:textColor="@color/yunkacolor_h_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/index_tab_recommend_new" android:layout_below="@id/id_flowlayout" />
+</RelativeLayout>

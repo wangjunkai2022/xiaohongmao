@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/back_to_main" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/image_edit_back" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/add_text_btn" android:layout_centerInParent="true" style="@style/option_style">
+        <ImageView android:layout_gravity="center" android:src="@drawable/ic_add_text" style="@style/icon_style"/>
+        <TextView android:text="@string/iamutkarshtiwari_github_io_ananas_text" style="@style/option_text_style"/>
+    </LinearLayout>
+</RelativeLayout>

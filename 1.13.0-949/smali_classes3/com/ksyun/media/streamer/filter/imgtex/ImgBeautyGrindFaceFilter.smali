@@ -1,0 +1,2604 @@
+.class public Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;
+.super Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;
+.source "ImgBeautyGrindFaceFilter.java"
+
+
+# instance fields
+.field private a:I
+
+.field private b:[I
+
+.field private c:[I
+
+.field private d:I
+
+.field private e:I
+
+.field private f:I
+
+.field private g:I
+
+.field private h:I
+
+.field private i:I
+
+.field private j:Lcom/ksyun/media/streamer/framework/ImgTexFormat;
+
+.field private k:[S
+
+.field private l:[S
+
+
+# direct methods
+.method public constructor <init>(Lcom/ksyun/media/streamer/util/gles/GLRender;)V
+    .locals 3
+
+    const-string v0, "uniform mat4 uTexMatrix;\nattribute vec4 aPosition;\nattribute vec4 aTextureCoord;\nvarying vec2 vTextureCoord;\nvoid main() {\n    gl_Position = aPosition;\n    vTextureCoord = (uTexMatrix * aTextureCoord).xy;\n}\n"
+
+    const/16 v1, 0x9
+
+    .line 1
+    invoke-direct {p0, p1, v0, v1}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;-><init>(Lcom/ksyun/media/streamer/util/gles/GLRender;Ljava/lang/String;I)V
+
+    const/4 p1, -0x1
+
+    .line 2
+    iput p1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->a:I
+
+    const/4 v0, 0x1
+
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    aput p1, v1, v2
+
+    .line 3
+    iput-object v1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    new-array v0, v0, [I
+
+    aput p1, v0, v2
+
+    .line 4
+    iput-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    const/16 p1, 0x400
+
+    new-array v0, p1, [S
+
+    .line 5
+    fill-array-data v0, :array_0
+
+    iput-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->k:[S
+
+    new-array p1, p1, [S
+
+    .line 6
+    fill-array-data p1, :array_1
+
+    iput-object p1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->l:[S
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x1s
+        0x1s
+        0x1s
+        0xffs
+        0x1s
+        0x1s
+        0x1s
+        0xffs
+        0x1s
+        0x1s
+        0x1s
+        0xffs
+        0x2s
+        0x2s
+        0x2s
+        0xffs
+        0x2s
+        0x2s
+        0x2s
+        0xffs
+        0x2s
+        0x2s
+        0x2s
+        0xffs
+        0x3s
+        0x3s
+        0x3s
+        0xffs
+        0x4s
+        0x4s
+        0x4s
+        0xffs
+        0x4s
+        0x4s
+        0x4s
+        0xffs
+        0x5s
+        0x5s
+        0x5s
+        0xffs
+        0x6s
+        0x6s
+        0x6s
+        0xffs
+        0x7s
+        0x7s
+        0x7s
+        0xffs
+        0x7s
+        0x7s
+        0x7s
+        0xffs
+        0x8s
+        0x8s
+        0x8s
+        0xffs
+        0x9s
+        0x9s
+        0x9s
+        0xffs
+        0xas
+        0xas
+        0xas
+        0xffs
+        0xcs
+        0xcs
+        0xcs
+        0xffs
+        0xds
+        0xds
+        0xds
+        0xffs
+        0xes
+        0xes
+        0xes
+        0xffs
+        0xfs
+        0xfs
+        0xfs
+        0xffs
+        0x10s
+        0x10s
+        0x10s
+        0xffs
+        0x12s
+        0x12s
+        0x12s
+        0xffs
+        0x13s
+        0x13s
+        0x13s
+        0xffs
+        0x15s
+        0x15s
+        0x15s
+        0xffs
+        0x16s
+        0x16s
+        0x16s
+        0xffs
+        0x17s
+        0x17s
+        0x17s
+        0xffs
+        0x19s
+        0x19s
+        0x19s
+        0xffs
+        0x1bs
+        0x1bs
+        0x1bs
+        0xffs
+        0x1cs
+        0x1cs
+        0x1cs
+        0xffs
+        0x1es
+        0x1es
+        0x1es
+        0xffs
+        0x20s
+        0x20s
+        0x20s
+        0xffs
+        0x21s
+        0x21s
+        0x21s
+        0xffs
+        0x23s
+        0x23s
+        0x23s
+        0xffs
+        0x25s
+        0x25s
+        0x25s
+        0xffs
+        0x27s
+        0x27s
+        0x27s
+        0xffs
+        0x29s
+        0x29s
+        0x29s
+        0xffs
+        0x2bs
+        0x2bs
+        0x2bs
+        0xffs
+        0x2ds
+        0x2ds
+        0x2ds
+        0xffs
+        0x2es
+        0x2es
+        0x2es
+        0xffs
+        0x30s
+        0x30s
+        0x30s
+        0xffs
+        0x32s
+        0x32s
+        0x32s
+        0xffs
+        0x35s
+        0x35s
+        0x35s
+        0xffs
+        0x37s
+        0x37s
+        0x37s
+        0xffs
+        0x39s
+        0x39s
+        0x39s
+        0xffs
+        0x3bs
+        0x3bs
+        0x3bs
+        0xffs
+        0x3ds
+        0x3ds
+        0x3ds
+        0xffs
+        0x3fs
+        0x3fs
+        0x3fs
+        0xffs
+        0x41s
+        0x41s
+        0x41s
+        0xffs
+        0x43s
+        0x43s
+        0x43s
+        0xffs
+        0x46s
+        0x46s
+        0x46s
+        0xffs
+        0x48s
+        0x48s
+        0x48s
+        0xffs
+        0x4as
+        0x4as
+        0x4as
+        0xffs
+        0x4cs
+        0x4cs
+        0x4cs
+        0xffs
+        0x4es
+        0x4es
+        0x4es
+        0xffs
+        0x51s
+        0x51s
+        0x51s
+        0xffs
+        0x53s
+        0x53s
+        0x53s
+        0xffs
+        0x55s
+        0x55s
+        0x55s
+        0xffs
+        0x57s
+        0x57s
+        0x57s
+        0xffs
+        0x59s
+        0x59s
+        0x59s
+        0xffs
+        0x5bs
+        0x5bs
+        0x5bs
+        0xffs
+        0x5ds
+        0x5ds
+        0x5ds
+        0xffs
+        0x60s
+        0x60s
+        0x60s
+        0xffs
+        0x62s
+        0x62s
+        0x62s
+        0xffs
+        0x64s
+        0x64s
+        0x64s
+        0xffs
+        0x66s
+        0x66s
+        0x66s
+        0xffs
+        0x68s
+        0x68s
+        0x68s
+        0xffs
+        0x6as
+        0x6as
+        0x6as
+        0xffs
+        0x6cs
+        0x6cs
+        0x6cs
+        0xffs
+        0x6es
+        0x6es
+        0x6es
+        0xffs
+        0x70s
+        0x70s
+        0x70s
+        0xffs
+        0x72s
+        0x72s
+        0x72s
+        0xffs
+        0x73s
+        0x73s
+        0x73s
+        0xffs
+        0x75s
+        0x75s
+        0x75s
+        0xffs
+        0x77s
+        0x77s
+        0x77s
+        0xffs
+        0x79s
+        0x79s
+        0x79s
+        0xffs
+        0x7as
+        0x7as
+        0x7as
+        0xffs
+        0x7cs
+        0x7cs
+        0x7cs
+        0xffs
+        0x7es
+        0x7es
+        0x7es
+        0xffs
+        0x7fs
+        0x7fs
+        0x7fs
+        0xffs
+        0x81s
+        0x81s
+        0x81s
+        0xffs
+        0x82s
+        0x82s
+        0x82s
+        0xffs
+        0x84s
+        0x84s
+        0x84s
+        0xffs
+        0x85s
+        0x85s
+        0x85s
+        0xffs
+        0x87s
+        0x87s
+        0x87s
+        0xffs
+        0x88s
+        0x88s
+        0x88s
+        0xffs
+        0x89s
+        0x89s
+        0x89s
+        0xffs
+        0x8bs
+        0x8bs
+        0x8bs
+        0xffs
+        0x8cs
+        0x8cs
+        0x8cs
+        0xffs
+        0x8ds
+        0x8ds
+        0x8ds
+        0xffs
+        0x8fs
+        0x8fs
+        0x8fs
+        0xffs
+        0x90s
+        0x90s
+        0x90s
+        0xffs
+        0x91s
+        0x91s
+        0x91s
+        0xffs
+        0x92s
+        0x92s
+        0x92s
+        0xffs
+        0x94s
+        0x94s
+        0x94s
+        0xffs
+        0x95s
+        0x95s
+        0x95s
+        0xffs
+        0x96s
+        0x96s
+        0x96s
+        0xffs
+        0x97s
+        0x97s
+        0x97s
+        0xffs
+        0x98s
+        0x98s
+        0x98s
+        0xffs
+        0x99s
+        0x99s
+        0x99s
+        0xffs
+        0x9as
+        0x9as
+        0x9as
+        0xffs
+        0x9bs
+        0x9bs
+        0x9bs
+        0xffs
+        0x9cs
+        0x9cs
+        0x9cs
+        0xffs
+        0x9es
+        0x9es
+        0x9es
+        0xffs
+        0x9fs
+        0x9fs
+        0x9fs
+        0xffs
+        0xa0s
+        0xa0s
+        0xa0s
+        0xffs
+        0xa1s
+        0xa1s
+        0xa1s
+        0xffs
+        0xa2s
+        0xa2s
+        0xa2s
+        0xffs
+        0xa3s
+        0xa3s
+        0xa3s
+        0xffs
+        0xa3s
+        0xa3s
+        0xa3s
+        0xffs
+        0xa4s
+        0xa4s
+        0xa4s
+        0xffs
+        0xa5s
+        0xa5s
+        0xa5s
+        0xffs
+        0xa6s
+        0xa6s
+        0xa6s
+        0xffs
+        0xa7s
+        0xa7s
+        0xa7s
+        0xffs
+        0xa8s
+        0xa8s
+        0xa8s
+        0xffs
+        0xa9s
+        0xa9s
+        0xa9s
+        0xffs
+        0xaas
+        0xaas
+        0xaas
+        0xffs
+        0xabs
+        0xabs
+        0xabs
+        0xffs
+        0xacs
+        0xacs
+        0xacs
+        0xffs
+        0xads
+        0xads
+        0xads
+        0xffs
+        0xads
+        0xads
+        0xads
+        0xffs
+        0xaes
+        0xaes
+        0xaes
+        0xffs
+        0xafs
+        0xafs
+        0xafs
+        0xffs
+        0xb0s
+        0xb0s
+        0xb0s
+        0xffs
+        0xb1s
+        0xb1s
+        0xb1s
+        0xffs
+        0xb2s
+        0xb2s
+        0xb2s
+        0xffs
+        0xb2s
+        0xb2s
+        0xb2s
+        0xffs
+        0xb3s
+        0xb3s
+        0xb3s
+        0xffs
+        0xb4s
+        0xb4s
+        0xb4s
+        0xffs
+        0xb5s
+        0xb5s
+        0xb5s
+        0xffs
+        0xb6s
+        0xb6s
+        0xb6s
+        0xffs
+        0xb6s
+        0xb6s
+        0xb6s
+        0xffs
+        0xb7s
+        0xb7s
+        0xb7s
+        0xffs
+        0xb8s
+        0xb8s
+        0xb8s
+        0xffs
+        0xb9s
+        0xb9s
+        0xb9s
+        0xffs
+        0xbas
+        0xbas
+        0xbas
+        0xffs
+        0xbas
+        0xbas
+        0xbas
+        0xffs
+        0xbbs
+        0xbbs
+        0xbbs
+        0xffs
+        0xbcs
+        0xbcs
+        0xbcs
+        0xffs
+        0xbds
+        0xbds
+        0xbds
+        0xffs
+        0xbds
+        0xbds
+        0xbds
+        0xffs
+        0xbes
+        0xbes
+        0xbes
+        0xffs
+        0xbfs
+        0xbfs
+        0xbfs
+        0xffs
+        0xbfs
+        0xbfs
+        0xbfs
+        0xffs
+        0xc0s
+        0xc0s
+        0xc0s
+        0xffs
+        0xc1s
+        0xc1s
+        0xc1s
+        0xffs
+        0xc2s
+        0xc2s
+        0xc2s
+        0xffs
+        0xc2s
+        0xc2s
+        0xc2s
+        0xffs
+        0xc3s
+        0xc3s
+        0xc3s
+        0xffs
+        0xc4s
+        0xc4s
+        0xc4s
+        0xffs
+        0xc4s
+        0xc4s
+        0xc4s
+        0xffs
+        0xc5s
+        0xc5s
+        0xc5s
+        0xffs
+        0xc6s
+        0xc6s
+        0xc6s
+        0xffs
+        0xc6s
+        0xc6s
+        0xc6s
+        0xffs
+        0xc7s
+        0xc7s
+        0xc7s
+        0xffs
+        0xc8s
+        0xc8s
+        0xc8s
+        0xffs
+        0xc8s
+        0xc8s
+        0xc8s
+        0xffs
+        0xc9s
+        0xc9s
+        0xc9s
+        0xffs
+        0xcas
+        0xcas
+        0xcas
+        0xffs
+        0xcbs
+        0xcbs
+        0xcbs
+        0xffs
+        0xcbs
+        0xcbs
+        0xcbs
+        0xffs
+        0xccs
+        0xccs
+        0xccs
+        0xffs
+        0xcds
+        0xcds
+        0xcds
+        0xffs
+        0xcds
+        0xcds
+        0xcds
+        0xffs
+        0xces
+        0xces
+        0xces
+        0xffs
+        0xces
+        0xces
+        0xces
+        0xffs
+        0xcfs
+        0xcfs
+        0xcfs
+        0xffs
+        0xd0s
+        0xd0s
+        0xd0s
+        0xffs
+        0xd0s
+        0xd0s
+        0xd0s
+        0xffs
+        0xd1s
+        0xd1s
+        0xd1s
+        0xffs
+        0xd2s
+        0xd2s
+        0xd2s
+        0xffs
+        0xd2s
+        0xd2s
+        0xd2s
+        0xffs
+        0xd3s
+        0xd3s
+        0xd3s
+        0xffs
+        0xd4s
+        0xd4s
+        0xd4s
+        0xffs
+        0xd4s
+        0xd4s
+        0xd4s
+        0xffs
+        0xd5s
+        0xd5s
+        0xd5s
+        0xffs
+        0xd6s
+        0xd6s
+        0xd6s
+        0xffs
+        0xd6s
+        0xd6s
+        0xd6s
+        0xffs
+        0xd7s
+        0xd7s
+        0xd7s
+        0xffs
+        0xd8s
+        0xd8s
+        0xd8s
+        0xffs
+        0xd8s
+        0xd8s
+        0xd8s
+        0xffs
+        0xd9s
+        0xd9s
+        0xd9s
+        0xffs
+        0xd9s
+        0xd9s
+        0xd9s
+        0xffs
+        0xdas
+        0xdas
+        0xdas
+        0xffs
+        0xdbs
+        0xdbs
+        0xdbs
+        0xffs
+        0xdbs
+        0xdbs
+        0xdbs
+        0xffs
+        0xdcs
+        0xdcs
+        0xdcs
+        0xffs
+        0xdds
+        0xdds
+        0xdds
+        0xffs
+        0xdds
+        0xdds
+        0xdds
+        0xffs
+        0xdes
+        0xdes
+        0xdes
+        0xffs
+        0xdes
+        0xdes
+        0xdes
+        0xffs
+        0xdfs
+        0xdfs
+        0xdfs
+        0xffs
+        0xe0s
+        0xe0s
+        0xe0s
+        0xffs
+        0xe0s
+        0xe0s
+        0xe0s
+        0xffs
+        0xe1s
+        0xe1s
+        0xe1s
+        0xffs
+        0xe2s
+        0xe2s
+        0xe2s
+        0xffs
+        0xe2s
+        0xe2s
+        0xe2s
+        0xffs
+        0xe3s
+        0xe3s
+        0xe3s
+        0xffs
+        0xe3s
+        0xe3s
+        0xe3s
+        0xffs
+        0xe4s
+        0xe4s
+        0xe4s
+        0xffs
+        0xe5s
+        0xe5s
+        0xe5s
+        0xffs
+        0xe5s
+        0xe5s
+        0xe5s
+        0xffs
+        0xe6s
+        0xe6s
+        0xe6s
+        0xffs
+        0xe6s
+        0xe6s
+        0xe6s
+        0xffs
+        0xe7s
+        0xe7s
+        0xe7s
+        0xffs
+        0xe8s
+        0xe8s
+        0xe8s
+        0xffs
+        0xe8s
+        0xe8s
+        0xe8s
+        0xffs
+        0xe9s
+        0xe9s
+        0xe9s
+        0xffs
+        0xe9s
+        0xe9s
+        0xe9s
+        0xffs
+        0xeas
+        0xeas
+        0xeas
+        0xffs
+        0xeas
+        0xeas
+        0xeas
+        0xffs
+        0xebs
+        0xebs
+        0xebs
+        0xffs
+        0xecs
+        0xecs
+        0xecs
+        0xffs
+        0xecs
+        0xecs
+        0xecs
+        0xffs
+        0xeds
+        0xeds
+        0xeds
+        0xffs
+        0xeds
+        0xeds
+        0xeds
+        0xffs
+        0xees
+        0xees
+        0xees
+        0xffs
+        0xees
+        0xees
+        0xees
+        0xffs
+        0xefs
+        0xefs
+        0xefs
+        0xffs
+        0xefs
+        0xefs
+        0xefs
+        0xffs
+        0xf0s
+        0xf0s
+        0xf0s
+        0xffs
+        0xf1s
+        0xf1s
+        0xf1s
+        0xffs
+        0xf1s
+        0xf1s
+        0xf1s
+        0xffs
+        0xf2s
+        0xf2s
+        0xf2s
+        0xffs
+        0xf2s
+        0xf2s
+        0xf2s
+        0xffs
+        0xf3s
+        0xf3s
+        0xf3s
+        0xffs
+        0xf3s
+        0xf3s
+        0xf3s
+        0xffs
+        0xf4s
+        0xf4s
+        0xf4s
+        0xffs
+        0xf4s
+        0xf4s
+        0xf4s
+        0xffs
+        0xf5s
+        0xf5s
+        0xf5s
+        0xffs
+        0xf5s
+        0xf5s
+        0xf5s
+        0xffs
+        0xf6s
+        0xf6s
+        0xf6s
+        0xffs
+        0xf7s
+        0xf7s
+        0xf7s
+        0xffs
+        0xf7s
+        0xf7s
+        0xf7s
+        0xffs
+        0xf8s
+        0xf8s
+        0xf8s
+        0xffs
+        0xf8s
+        0xf8s
+        0xf8s
+        0xffs
+        0xf9s
+        0xf9s
+        0xf9s
+        0xffs
+        0xf9s
+        0xf9s
+        0xf9s
+        0xffs
+        0xfas
+        0xfas
+        0xfas
+        0xffs
+        0xfas
+        0xfas
+        0xfas
+        0xffs
+        0xfbs
+        0xfbs
+        0xfbs
+        0xffs
+        0xfbs
+        0xfbs
+        0xfbs
+        0xffs
+        0xfcs
+        0xfcs
+        0xfcs
+        0xffs
+        0xfcs
+        0xfcs
+        0xfcs
+        0xffs
+        0xfds
+        0xfds
+        0xfds
+        0xffs
+        0xfds
+        0xfds
+        0xfds
+        0xffs
+        0xfes
+        0xfes
+        0xfes
+        0xffs
+        0xffs
+        0xffs
+        0xffs
+        0xffs
+    .end array-data
+
+    :array_1
+    .array-data 2
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x0s
+        0x0s
+        0x0s
+        0xffs
+        0x1s
+        0x1s
+        0x1s
+        0xffs
+        0x2s
+        0x2s
+        0x2s
+        0xffs
+        0x2s
+        0x2s
+        0x2s
+        0xffs
+        0x3s
+        0x3s
+        0x3s
+        0xffs
+        0x4s
+        0x4s
+        0x4s
+        0xffs
+        0x4s
+        0x4s
+        0x4s
+        0xffs
+        0x5s
+        0x5s
+        0x5s
+        0xffs
+        0x6s
+        0x6s
+        0x6s
+        0xffs
+        0x6s
+        0x6s
+        0x6s
+        0xffs
+        0x7s
+        0x7s
+        0x7s
+        0xffs
+        0x8s
+        0x8s
+        0x8s
+        0xffs
+        0x8s
+        0x8s
+        0x8s
+        0xffs
+        0x9s
+        0x9s
+        0x9s
+        0xffs
+        0xas
+        0xas
+        0xas
+        0xffs
+        0xbs
+        0xbs
+        0xbs
+        0xffs
+        0xbs
+        0xbs
+        0xbs
+        0xffs
+        0xcs
+        0xcs
+        0xcs
+        0xffs
+        0xds
+        0xds
+        0xds
+        0xffs
+        0xds
+        0xds
+        0xds
+        0xffs
+        0xes
+        0xes
+        0xes
+        0xffs
+        0xfs
+        0xfs
+        0xfs
+        0xffs
+        0xfs
+        0xfs
+        0xfs
+        0xffs
+        0x10s
+        0x10s
+        0x10s
+        0xffs
+        0x11s
+        0x11s
+        0x11s
+        0xffs
+        0x11s
+        0x11s
+        0x11s
+        0xffs
+        0x12s
+        0x12s
+        0x12s
+        0xffs
+        0x13s
+        0x13s
+        0x13s
+        0xffs
+        0x14s
+        0x14s
+        0x14s
+        0xffs
+        0x14s
+        0x14s
+        0x14s
+        0xffs
+        0x15s
+        0x15s
+        0x15s
+        0xffs
+        0x16s
+        0x16s
+        0x16s
+        0xffs
+        0x16s
+        0x16s
+        0x16s
+        0xffs
+        0x17s
+        0x17s
+        0x17s
+        0xffs
+        0x18s
+        0x18s
+        0x18s
+        0xffs
+        0x18s
+        0x18s
+        0x18s
+        0xffs
+        0x19s
+        0x19s
+        0x19s
+        0xffs
+        0x1as
+        0x1as
+        0x1as
+        0xffs
+        0x1bs
+        0x1bs
+        0x1bs
+        0xffs
+        0x1bs
+        0x1bs
+        0x1bs
+        0xffs
+        0x1cs
+        0x1cs
+        0x1cs
+        0xffs
+        0x1ds
+        0x1ds
+        0x1ds
+        0xffs
+        0x1ds
+        0x1ds
+        0x1ds
+        0xffs
+        0x1es
+        0x1es
+        0x1es
+        0xffs
+        0x1fs
+        0x1fs
+        0x1fs
+        0xffs
+        0x20s
+        0x20s
+        0x20s
+        0xffs
+        0x20s
+        0x20s
+        0x20s
+        0xffs
+        0x21s
+        0x21s
+        0x21s
+        0xffs
+        0x22s
+        0x22s
+        0x22s
+        0xffs
+        0x22s
+        0x22s
+        0x22s
+        0xffs
+        0x23s
+        0x23s
+        0x23s
+        0xffs
+        0x24s
+        0x24s
+        0x24s
+        0xffs
+        0x25s
+        0x25s
+        0x25s
+        0xffs
+        0x25s
+        0x25s
+        0x25s
+        0xffs
+        0x26s
+        0x26s
+        0x26s
+        0xffs
+        0x27s
+        0x27s
+        0x27s
+        0xffs
+        0x27s
+        0x27s
+        0x27s
+        0xffs
+        0x28s
+        0x28s
+        0x28s
+        0xffs
+        0x29s
+        0x29s
+        0x29s
+        0xffs
+        0x2as
+        0x2as
+        0x2as
+        0xffs
+        0x2as
+        0x2as
+        0x2as
+        0xffs
+        0x2bs
+        0x2bs
+        0x2bs
+        0xffs
+        0x2cs
+        0x2cs
+        0x2cs
+        0xffs
+        0x2ds
+        0x2ds
+        0x2ds
+        0xffs
+        0x2ds
+        0x2ds
+        0x2ds
+        0xffs
+        0x2es
+        0x2es
+        0x2es
+        0xffs
+        0x2fs
+        0x2fs
+        0x2fs
+        0xffs
+        0x2fs
+        0x2fs
+        0x2fs
+        0xffs
+        0x30s
+        0x30s
+        0x30s
+        0xffs
+        0x31s
+        0x31s
+        0x31s
+        0xffs
+        0x32s
+        0x32s
+        0x32s
+        0xffs
+        0x32s
+        0x32s
+        0x32s
+        0xffs
+        0x33s
+        0x33s
+        0x33s
+        0xffs
+        0x34s
+        0x34s
+        0x34s
+        0xffs
+        0x35s
+        0x35s
+        0x35s
+        0xffs
+        0x35s
+        0x35s
+        0x35s
+        0xffs
+        0x36s
+        0x36s
+        0x36s
+        0xffs
+        0x37s
+        0x37s
+        0x37s
+        0xffs
+        0x38s
+        0x38s
+        0x38s
+        0xffs
+        0x39s
+        0x39s
+        0x39s
+        0xffs
+        0x39s
+        0x39s
+        0x39s
+        0xffs
+        0x3as
+        0x3as
+        0x3as
+        0xffs
+        0x3bs
+        0x3bs
+        0x3bs
+        0xffs
+        0x3cs
+        0x3cs
+        0x3cs
+        0xffs
+        0x3cs
+        0x3cs
+        0x3cs
+        0xffs
+        0x3ds
+        0x3ds
+        0x3ds
+        0xffs
+        0x3es
+        0x3es
+        0x3es
+        0xffs
+        0x3fs
+        0x3fs
+        0x3fs
+        0xffs
+        0x3fs
+        0x3fs
+        0x3fs
+        0xffs
+        0x40s
+        0x40s
+        0x40s
+        0xffs
+        0x41s
+        0x41s
+        0x41s
+        0xffs
+        0x42s
+        0x42s
+        0x42s
+        0xffs
+        0x43s
+        0x43s
+        0x43s
+        0xffs
+        0x43s
+        0x43s
+        0x43s
+        0xffs
+        0x44s
+        0x44s
+        0x44s
+        0xffs
+        0x45s
+        0x45s
+        0x45s
+        0xffs
+        0x46s
+        0x46s
+        0x46s
+        0xffs
+        0x47s
+        0x47s
+        0x47s
+        0xffs
+        0x47s
+        0x47s
+        0x47s
+        0xffs
+        0x48s
+        0x48s
+        0x48s
+        0xffs
+        0x49s
+        0x49s
+        0x49s
+        0xffs
+        0x4as
+        0x4as
+        0x4as
+        0xffs
+        0x4bs
+        0x4bs
+        0x4bs
+        0xffs
+        0x4bs
+        0x4bs
+        0x4bs
+        0xffs
+        0x4cs
+        0x4cs
+        0x4cs
+        0xffs
+        0x4ds
+        0x4ds
+        0x4ds
+        0xffs
+        0x4es
+        0x4es
+        0x4es
+        0xffs
+        0x4fs
+        0x4fs
+        0x4fs
+        0xffs
+        0x50s
+        0x50s
+        0x50s
+        0xffs
+        0x50s
+        0x50s
+        0x50s
+        0xffs
+        0x51s
+        0x51s
+        0x51s
+        0xffs
+        0x52s
+        0x52s
+        0x52s
+        0xffs
+        0x53s
+        0x53s
+        0x53s
+        0xffs
+        0x54s
+        0x54s
+        0x54s
+        0xffs
+        0x55s
+        0x55s
+        0x55s
+        0xffs
+        0x55s
+        0x55s
+        0x55s
+        0xffs
+        0x56s
+        0x56s
+        0x56s
+        0xffs
+        0x57s
+        0x57s
+        0x57s
+        0xffs
+        0x58s
+        0x58s
+        0x58s
+        0xffs
+        0x59s
+        0x59s
+        0x59s
+        0xffs
+        0x5as
+        0x5as
+        0x5as
+        0xffs
+        0x5bs
+        0x5bs
+        0x5bs
+        0xffs
+        0x5bs
+        0x5bs
+        0x5bs
+        0xffs
+        0x5cs
+        0x5cs
+        0x5cs
+        0xffs
+        0x5ds
+        0x5ds
+        0x5ds
+        0xffs
+        0x5es
+        0x5es
+        0x5es
+        0xffs
+        0x5fs
+        0x5fs
+        0x5fs
+        0xffs
+        0x60s
+        0x60s
+        0x60s
+        0xffs
+        0x61s
+        0x61s
+        0x61s
+        0xffs
+        0x62s
+        0x62s
+        0x62s
+        0xffs
+        0x62s
+        0x62s
+        0x62s
+        0xffs
+        0x63s
+        0x63s
+        0x63s
+        0xffs
+        0x64s
+        0x64s
+        0x64s
+        0xffs
+        0x65s
+        0x65s
+        0x65s
+        0xffs
+        0x66s
+        0x66s
+        0x66s
+        0xffs
+        0x67s
+        0x67s
+        0x67s
+        0xffs
+        0x68s
+        0x68s
+        0x68s
+        0xffs
+        0x69s
+        0x69s
+        0x69s
+        0xffs
+        0x6as
+        0x6as
+        0x6as
+        0xffs
+        0x6bs
+        0x6bs
+        0x6bs
+        0xffs
+        0x6cs
+        0x6cs
+        0x6cs
+        0xffs
+        0x6cs
+        0x6cs
+        0x6cs
+        0xffs
+        0x6ds
+        0x6ds
+        0x6ds
+        0xffs
+        0x6es
+        0x6es
+        0x6es
+        0xffs
+        0x6fs
+        0x6fs
+        0x6fs
+        0xffs
+        0x70s
+        0x70s
+        0x70s
+        0xffs
+        0x71s
+        0x71s
+        0x71s
+        0xffs
+        0x72s
+        0x72s
+        0x72s
+        0xffs
+        0x73s
+        0x73s
+        0x73s
+        0xffs
+        0x74s
+        0x74s
+        0x74s
+        0xffs
+        0x75s
+        0x75s
+        0x75s
+        0xffs
+        0x76s
+        0x76s
+        0x76s
+        0xffs
+        0x77s
+        0x77s
+        0x77s
+        0xffs
+        0x78s
+        0x78s
+        0x78s
+        0xffs
+        0x79s
+        0x79s
+        0x79s
+        0xffs
+        0x7as
+        0x7as
+        0x7as
+        0xffs
+        0x7bs
+        0x7bs
+        0x7bs
+        0xffs
+        0x7cs
+        0x7cs
+        0x7cs
+        0xffs
+        0x7ds
+        0x7ds
+        0x7ds
+        0xffs
+        0x7es
+        0x7es
+        0x7es
+        0xffs
+        0x7fs
+        0x7fs
+        0x7fs
+        0xffs
+        0x80s
+        0x80s
+        0x80s
+        0xffs
+        0x81s
+        0x81s
+        0x81s
+        0xffs
+        0x82s
+        0x82s
+        0x82s
+        0xffs
+        0x83s
+        0x83s
+        0x83s
+        0xffs
+        0x84s
+        0x84s
+        0x84s
+        0xffs
+        0x85s
+        0x85s
+        0x85s
+        0xffs
+        0x86s
+        0x86s
+        0x86s
+        0xffs
+        0x87s
+        0x87s
+        0x87s
+        0xffs
+        0x88s
+        0x88s
+        0x88s
+        0xffs
+        0x89s
+        0x89s
+        0x89s
+        0xffs
+        0x8as
+        0x8as
+        0x8as
+        0xffs
+        0x8bs
+        0x8bs
+        0x8bs
+        0xffs
+        0x8cs
+        0x8cs
+        0x8cs
+        0xffs
+        0x8ds
+        0x8ds
+        0x8ds
+        0xffs
+        0x8es
+        0x8es
+        0x8es
+        0xffs
+        0x8fs
+        0x8fs
+        0x8fs
+        0xffs
+        0x90s
+        0x90s
+        0x90s
+        0xffs
+        0x91s
+        0x91s
+        0x91s
+        0xffs
+        0x92s
+        0x92s
+        0x92s
+        0xffs
+        0x94s
+        0x94s
+        0x94s
+        0xffs
+        0x95s
+        0x95s
+        0x95s
+        0xffs
+        0x96s
+        0x96s
+        0x96s
+        0xffs
+        0x97s
+        0x97s
+        0x97s
+        0xffs
+        0x98s
+        0x98s
+        0x98s
+        0xffs
+        0x99s
+        0x99s
+        0x99s
+        0xffs
+        0x9as
+        0x9as
+        0x9as
+        0xffs
+        0x9bs
+        0x9bs
+        0x9bs
+        0xffs
+        0x9cs
+        0x9cs
+        0x9cs
+        0xffs
+        0x9ds
+        0x9ds
+        0x9ds
+        0xffs
+        0x9fs
+        0x9fs
+        0x9fs
+        0xffs
+        0xa0s
+        0xa0s
+        0xa0s
+        0xffs
+        0xa1s
+        0xa1s
+        0xa1s
+        0xffs
+        0xa2s
+        0xa2s
+        0xa2s
+        0xffs
+        0xa3s
+        0xa3s
+        0xa3s
+        0xffs
+        0xa4s
+        0xa4s
+        0xa4s
+        0xffs
+        0xa5s
+        0xa5s
+        0xa5s
+        0xffs
+        0xa7s
+        0xa7s
+        0xa7s
+        0xffs
+        0xa8s
+        0xa8s
+        0xa8s
+        0xffs
+        0xa9s
+        0xa9s
+        0xa9s
+        0xffs
+        0xaas
+        0xaas
+        0xaas
+        0xffs
+        0xabs
+        0xabs
+        0xabs
+        0xffs
+        0xacs
+        0xacs
+        0xacs
+        0xffs
+        0xaes
+        0xaes
+        0xaes
+        0xffs
+        0xafs
+        0xafs
+        0xafs
+        0xffs
+        0xb0s
+        0xb0s
+        0xb0s
+        0xffs
+        0xb1s
+        0xb1s
+        0xb1s
+        0xffs
+        0xb2s
+        0xb2s
+        0xb2s
+        0xffs
+        0xb3s
+        0xb3s
+        0xb3s
+        0xffs
+        0xb5s
+        0xb5s
+        0xb5s
+        0xffs
+        0xb6s
+        0xb6s
+        0xb6s
+        0xffs
+        0xb7s
+        0xb7s
+        0xb7s
+        0xffs
+        0xb8s
+        0xb8s
+        0xb8s
+        0xffs
+        0xbas
+        0xbas
+        0xbas
+        0xffs
+        0xbbs
+        0xbbs
+        0xbbs
+        0xffs
+        0xbcs
+        0xbcs
+        0xbcs
+        0xffs
+        0xbds
+        0xbds
+        0xbds
+        0xffs
+        0xbes
+        0xbes
+        0xbes
+        0xffs
+        0xc0s
+        0xc0s
+        0xc0s
+        0xffs
+        0xc1s
+        0xc1s
+        0xc1s
+        0xffs
+        0xc2s
+        0xc2s
+        0xc2s
+        0xffs
+        0xc3s
+        0xc3s
+        0xc3s
+        0xffs
+        0xc5s
+        0xc5s
+        0xc5s
+        0xffs
+        0xc6s
+        0xc6s
+        0xc6s
+        0xffs
+        0xc7s
+        0xc7s
+        0xc7s
+        0xffs
+        0xc8s
+        0xc8s
+        0xc8s
+        0xffs
+        0xcas
+        0xcas
+        0xcas
+        0xffs
+        0xcbs
+        0xcbs
+        0xcbs
+        0xffs
+        0xccs
+        0xccs
+        0xccs
+        0xffs
+        0xcds
+        0xcds
+        0xcds
+        0xffs
+        0xcfs
+        0xcfs
+        0xcfs
+        0xffs
+        0xd0s
+        0xd0s
+        0xd0s
+        0xffs
+        0xd1s
+        0xd1s
+        0xd1s
+        0xffs
+        0xd3s
+        0xd3s
+        0xd3s
+        0xffs
+        0xd4s
+        0xd4s
+        0xd4s
+        0xffs
+        0xd5s
+        0xd5s
+        0xd5s
+        0xffs
+        0xd6s
+        0xd6s
+        0xd6s
+        0xffs
+        0xd8s
+        0xd8s
+        0xd8s
+        0xffs
+        0xd9s
+        0xd9s
+        0xd9s
+        0xffs
+        0xdas
+        0xdas
+        0xdas
+        0xffs
+        0xdbs
+        0xdbs
+        0xdbs
+        0xffs
+        0xdds
+        0xdds
+        0xdds
+        0xffs
+        0xdes
+        0xdes
+        0xdes
+        0xffs
+        0xdfs
+        0xdfs
+        0xdfs
+        0xffs
+        0xe1s
+        0xe1s
+        0xe1s
+        0xffs
+        0xe2s
+        0xe2s
+        0xe2s
+        0xffs
+        0xe3s
+        0xe3s
+        0xe3s
+        0xffs
+        0xe4s
+        0xe4s
+        0xe4s
+        0xffs
+        0xe6s
+        0xe6s
+        0xe6s
+        0xffs
+        0xe7s
+        0xe7s
+        0xe7s
+        0xffs
+        0xe8s
+        0xe8s
+        0xe8s
+        0xffs
+        0xeas
+        0xeas
+        0xeas
+        0xffs
+        0xebs
+        0xebs
+        0xebs
+        0xffs
+        0xecs
+        0xecs
+        0xecs
+        0xffs
+        0xees
+        0xees
+        0xees
+        0xffs
+    .end array-data
+.end method
+
+.method private a()V
+    .locals 21
+
+    move-object/from16 v0, p0
+
+    const/16 v1, 0x400
+
+    new-array v2, v1, [B
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v1, :cond_0
+
+    .line 1
+    iget-object v5, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->k:[S
+
+    aget-short v5, v5, v4
+
+    int-to-byte v5, v5
+
+    aput-byte v5, v2, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const v4, 0x84c3
+
+    .line 2
+    invoke-static {v4}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 3
+    iget-object v4, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    const/4 v5, 0x1
+
+    invoke-static {v5, v4, v3}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
+
+    .line 4
+    iget-object v4, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    aget v4, v4, v3
+
+    const/16 v6, 0xde1
+
+    invoke-static {v6, v4}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    const/16 v4, 0x2800
+
+    const v7, 0x46180400    # 9729.0f
+
+    .line 5
+    invoke-static {v6, v4, v7}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    const/16 v8, 0x2801
+
+    .line 6
+    invoke-static {v6, v8, v7}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    const/16 v9, 0x2802
+
+    const v10, 0x47012f00    # 33071.0f
+
+    .line 7
+    invoke-static {v6, v9, v10}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    const/16 v11, 0x2803
+
+    .line 8
+    invoke-static {v6, v11, v10}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    const/16 v12, 0xde1
+
+    const/4 v13, 0x0
+
+    const/16 v14, 0x1908
+
+    const/16 v15, 0x100
+
+    const/16 v16, 0x1
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x1908
+
+    const/16 v19, 0x1401
+
+    .line 9
+    invoke-static {v2}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object v20
+
+    .line 10
+    invoke-static/range {v12 .. v20}, Landroid/opengl/GLES20;->glTexImage2D(IIIIIIIILjava/nio/Buffer;)V
+
+    new-array v2, v1, [B
+
+    const/4 v12, 0x0
+
+    :goto_1
+    if-ge v12, v1, :cond_1
+
+    .line 11
+    iget-object v13, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->l:[S
+
+    aget-short v13, v13, v12
+
+    int-to-byte v13, v13
+
+    aput-byte v13, v2, v12
+
+    add-int/lit8 v12, v12, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const v1, 0x84c4
+
+    .line 12
+    invoke-static {v1}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 13
+    iget-object v1, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    invoke-static {v5, v1, v3}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
+
+    .line 14
+    iget-object v1, v0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    aget v1, v1, v3
+
+    invoke-static {v6, v1}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    .line 15
+    invoke-static {v6, v4, v7}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    .line 16
+    invoke-static {v6, v8, v7}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    .line 17
+    invoke-static {v6, v9, v10}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    .line 18
+    invoke-static {v6, v11, v10}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    const/16 v12, 0xde1
+
+    const/4 v13, 0x0
+
+    const/16 v14, 0x1908
+
+    const/16 v15, 0x100
+
+    const/16 v16, 0x1
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x1908
+
+    const/16 v19, 0x1401
+
+    .line 19
+    invoke-static {v2}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object v20
+
+    .line 20
+    invoke-static/range {v12 .. v20}, Landroid/opengl/GLES20;->glTexImage2D(IIIIIIIILjava/nio/Buffer;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getSinkPinNum()I
+    .locals 1
+
+    const/4 v0, 0x2
+
+    return v0
+.end method
+
+.method public isGrindRatioSupported()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public isWhitenRatioSupported()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public onDraw([Lcom/ksyun/media/streamer/framework/ImgTexFrame;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 1
+    aget-object v0, p1, v0
+
+    iget v0, v0, Lcom/ksyun/media/streamer/framework/ImgTexFrame;->textureId:I
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->a:I
+
+    .line 2
+    invoke-super {p0, p1}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->onDraw([Lcom/ksyun/media/streamer/framework/ImgTexFrame;)V
+
+    return-void
+.end method
+
+.method protected onDrawArraysAfter()V
+    .locals 3
+
+    const v0, 0x84c2
+
+    .line 1
+    invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    const/16 v0, 0xde1
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    const v2, 0x84c3
+
+    .line 3
+    invoke-static {v2}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 4
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    const v2, 0x84c4
+
+    .line 5
+    invoke-static {v2}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 6
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    const v0, 0x84c0
+
+    .line 7
+    invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    return-void
+.end method
+
+.method protected onDrawArraysPre()V
+    .locals 4
+
+    const v0, 0x84c2
+
+    .line 1
+    invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 2
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->a:I
+
+    const/16 v1, 0xde1
+
+    invoke-static {v1, v0}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    .line 3
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->d:I
+
+    const/4 v2, 0x2
+
+    invoke-static {v0, v2}, Landroid/opengl/GLES20;->glUniform1i(II)V
+
+    const v0, 0x84c3
+
+    .line 4
+    invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 5
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    const/4 v2, 0x0
+
+    aget v0, v0, v2
+
+    invoke-static {v1, v0}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    .line 6
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->e:I
+
+    const/4 v3, 0x3
+
+    invoke-static {v0, v3}, Landroid/opengl/GLES20;->glUniform1i(II)V
+
+    const v0, 0x84c4
+
+    .line 7
+    invoke-static {v0}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    .line 8
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    aget v0, v0, v2
+
+    invoke-static {v1, v0}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    .line 9
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->f:I
+
+    const/4 v1, 0x4
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glUniform1i(II)V
+
+    .line 10
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->h:I
+
+    iget v1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgFilterBase;->mWhitenRatio:F
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    .line 11
+    iget v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->g:I
+
+    iget v1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgFilterBase;->mGrindRatio:F
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    return-void
+.end method
+
+.method protected onFormatChanged(Lcom/ksyun/media/streamer/framework/ImgTexFormat;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->j:Lcom/ksyun/media/streamer/framework/ImgTexFormat;
+
+    return-void
+.end method
+
+.method protected onInitialized()V
+    .locals 4
+
+    const-string v0, "faceTexture"
+
+    .line 1
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->d:I
+
+    const-string v0, "lightenTex"
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->e:I
+
+    const-string v0, "darkenTex"
+
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->f:I
+
+    const-string v0, "grindRatio"
+
+    .line 4
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->g:I
+
+    const-string v0, "whitenRatio"
+
+    .line 5
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->h:I
+
+    const-string v0, "singleStepOffset"
+
+    .line 6
+    invoke-virtual {p0, v0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->getUniformLocation(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->i:I
+
+    .line 7
+    iget-object v1, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->j:Lcom/ksyun/media/streamer/framework/ImgTexFormat;
+
+    iget v2, v1, Lcom/ksyun/media/streamer/framework/ImgTexFormat;->width:I
+
+    int-to-float v2, v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    div-float v2, v3, v2
+
+    iget v1, v1, Lcom/ksyun/media/streamer/framework/ImgTexFormat;->height:I
+
+    int-to-float v1, v1
+
+    div-float/2addr v3, v1
+
+    invoke-static {v0, v2, v3}, Landroid/opengl/GLES20;->glUniform2f(IFF)V
+
+    .line 8
+    invoke-direct {p0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->a()V
+
+    return-void
+.end method
+
+.method protected onRelease()V
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lcom/ksyun/media/streamer/filter/imgtex/ImgTexFilter;->onRelease()V
+
+    .line 2
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v0, v2}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
+
+    .line 3
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    invoke-static {v1, v0, v2}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
+
+    .line 4
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->b:[I
+
+    const/4 v1, -0x1
+
+    aput v1, v0, v2
+
+    .line 5
+    iget-object v0, p0, Lcom/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindFaceFilter;->c:[I
+
+    aput v1, v0, v2
+
+    return-void
+.end method

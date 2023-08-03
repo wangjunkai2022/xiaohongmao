@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="28" android:drawable="@drawable/porche_f4"/>
+    <item android:duration="28" android:drawable="@drawable/porche_f3"/>
+    <item android:duration="28" android:drawable="@drawable/porche_f2"/>
+    <item android:duration="28" android:drawable="@drawable/porche_f1"/>
+</animation-list>

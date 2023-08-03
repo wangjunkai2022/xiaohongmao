@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_to_main" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/image_edit_back" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:id="@id/brush_btn" style="@style/option_style">
+            <ImageView android:layout_gravity="center" android:id="@id/brush_icon" android:src="@drawable/ic_brush_white_24dp" style="@style/icon_style" />
+            <TextView android:text="@string/iamutkarshtiwari_github_io_ananas_brush" style="@style/option_text_style" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/eraser_btn" style="@style/option_style">
+            <ImageView android:layout_gravity="center" android:id="@id/eraser_icon" android:src="@drawable/ic_eraser_disabled" style="@style/icon_style" />
+            <TextView android:text="@string/iamutkarshtiwari_github_io_ananas_eraser" style="@style/option_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/settings" android:src="@drawable/ic_settings_black_24dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/setting_icon_style" />
+</RelativeLayout>

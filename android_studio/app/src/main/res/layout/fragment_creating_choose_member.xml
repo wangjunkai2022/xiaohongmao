@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/imPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:theme="@style/AppTheme.AppBarOverlay"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llAddMember" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <TextView android:textColor="@color/imAccent" android:id="@+id/tvGroupSize" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="@dimen/default_activity_margin" android:layout_marginEnd="@dimen/default_activity_margin"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/memberList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="@dimen/default_activity_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <View android:layout_marginTop="8dp" android:layout_marginBottom="8dp" style="@style/Divider"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/createFab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:src="@drawable/ic_arrow_right" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:rippleColor="@color/md_blue_100"/>
+    <FrameLayout android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/llAddMember"/>
+</RelativeLayout>

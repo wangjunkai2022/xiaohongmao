@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:theme="@style/AppTheme.AppBarOverlay" app:titleTextColor="@color/white" />
+    <androidx.appcompat.widget.SearchView android:id="@id/svContacts" android:layout_width="0.0dip" android:layout_height="wrap_content" app:iconifiedByDefault="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" app:queryHint="@string/activity_search_contact" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvContacts" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/chats_list_item_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/svContacts" />
+    <TextView android:textSize="18.0sp" android:id="@id/emptyView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_empty_black_contact_list" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/flLoading" android:background="#80ffffff" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

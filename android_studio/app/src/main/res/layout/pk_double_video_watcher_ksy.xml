@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" android:id="@+id/video_views_panel" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/video_pair" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/pk_info_container">
+        <com.ksyun.media.player.KSYTextureView android:id="@+id/tx_view_video" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentStart="true"/>
+        <View android:id="@+id/video_baseline" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/iv_pk_match_result_left" android:visibility="gone" android:layout_width="@dimen/pk_result_icon_size" android:layout_height="@dimen/pk_result_icon_size" android:src="@drawable/pk_win" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_toStartOf="@+id/video_baseline" android:layout_alignParentStart="true"/>
+        <ImageView android:id="@+id/iv_pk_match_result_right" android:visibility="gone" android:layout_width="@dimen/pk_result_icon_size" android:layout_height="@dimen/pk_result_icon_size" android:src="@drawable/pk_loss" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_toEndOf="@+id/video_baseline" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/iv_pk_match_result_draw" android:visibility="gone" android:layout_width="@dimen/pk_result_icon_size" android:layout_height="@dimen/pk_result_icon_size" android:src="@drawable/pk_draw" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/room_svga" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/svga_top" fresco:clearsAfterStop="true" fresco:fillMode="0" fresco:loopCount="1"/>
+    <FrameLayout android:id="@+id/pk_info_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-40dp" android:layout_alignParentBottom="true">
+        <com.qennnsad.aknkaksd.presentation.ui.widget.PkInfoPanel android:orientation="vertical" android:id="@+id/pk_info_panel" android:background="@drawable/shape_pk_gradient_beneath" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.qennnsad.aknkaksd.presentation.ui.widget.PkInfoPanel android:orientation="vertical" android:id="@+id/pk_info_panel_reversed" android:background="@drawable/shape_pk_gradient_beneath" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" fresco:reversed="true"/>
+    </FrameLayout>
+    <include layout="@layout/layout_pk_timer"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_above="@+id/pk_info_container" android:layout_alignParentEnd="true">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <include android:layout_gravity="end" android:id="@+id/switch_to_right_pk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_marginEnd="15dp" layout="@layout/button_switch_to_right_pk"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

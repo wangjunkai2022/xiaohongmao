@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/imPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:theme="@style/AppTheme.AppBarOverlay"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSingle" android:background="@drawable/ripple_item_press" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_chat_single_chat" app:tint="@color/md_second_text_color"/>
+        <TextView android:textSize="16sp" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_chose_new_chat_type_single" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llGroup" android:background="@drawable/ripple_item_press" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_chat_group_chat" app:tint="@color/md_second_text_color"/>
+        <TextView android:textSize="16sp" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_chose_new_chat_type_group" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llChatRoom" android:background="@drawable/ripple_item_press" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_chat_chat_room" app:tint="@color/md_second_text_color"/>
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/md_second_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_chose_new_chat_type_chat_room" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <TextView android:gravity="center_vertical" android:background="@color/md_grey_200" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_chats" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/chat_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

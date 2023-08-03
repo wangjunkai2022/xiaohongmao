@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/convNameLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_activity_margin" android:layout_marginStart="@dimen/default_activity_margin">
+        <FrameLayout android:layout_width="60dp" android:layout_height="60dp">
+            <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/md_white" android:gravity="center" android:id="@+id/tvGroupAvatar" android:background="@drawable/shape_item_chat_name" android:layout_width="60dp" android:layout_height="60dp" android:textAllCaps="true"/>
+            <ImageView android:id="@+id/ivAvatar" android:layout_width="60dp" android:layout_height="60dp"/>
+            <ImageView android:layout_gravity="end|bottom" android:background="@drawable/shape_item_chat_name" android:padding="4dp" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_im_edit" android:scaleType="fitCenter" android:backgroundTint="@color/imAccent"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/avatarLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <EditText android:id="@+id/etConvName" android:background="@null" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_chat_name" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:paddingEnd="8dp" android:layout_marginStart="@dimen/default_activity_margin"/>
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/default_activity_margin" android:layout_marginBottom="@dimen/default_activity_margin" style="@style/Divider.Bold"/>
+</LinearLayout>

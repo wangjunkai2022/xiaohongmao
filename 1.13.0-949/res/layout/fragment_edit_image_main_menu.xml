@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/tools" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_paint" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/paint" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_edit" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_filter" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/filter" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_filter" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_crop" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/crop" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_crop" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_rotate" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/rotate" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_rotate" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_text" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/text" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_stickers" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/ic_stickers" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_stickers" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_brightness" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/brightness" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_brightness" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_contrast" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/dropper" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_saturation" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/btn_beauty" android:visibility="gone" android:layout_weight="1.0" style="@style/option_style">
+                <ImageView android:layout_gravity="center" android:src="@drawable/beauty" style="@style/icon_style" />
+                <TextView android:textSize="@dimen/image_edit_text_size" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iamutkarshtiwari_github_io_ananas_beauty" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

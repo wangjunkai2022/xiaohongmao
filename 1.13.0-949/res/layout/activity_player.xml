@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_activity_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qennnsad.aknkaksd.util.ScrollableLayout android:id="@id/scrollable" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/prev" android:background="@drawable/bg_room_blurred" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.MySwipeView android:id="@id/player_swipe_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="true" splitMotionEvents="false">
+            <include android:id="@id/player" layout="@layout/item_view_player" />
+        </com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.MySwipeView>
+        <View android:id="@id/next" android:background="@drawable/bg_room_blurred" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.qennnsad.aknkaksd.util.ScrollableLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/mrl_danmaku" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginStart="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/mrl_danmaku_level" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include app:layout_constraintBottom_toBottomOf="parent" layout="@layout/room_live_chat_input" />
+        <include app:layout_constraintBottom_toBottomOf="parent" layout="@layout/room_layout_gift" />
+    </RelativeLayout>
+    <ImageView android:id="@id/testDialogButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/im_ic_menu_normal" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

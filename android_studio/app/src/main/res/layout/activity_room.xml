@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.MySwipeView android:id="@+id/publish_swipe_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" splitMotionEvents="false">
+        <FrameLayout android:id="@+id/room_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.qennnsad.aknkaksd.presentation.ui.room.player.player.view.MySwipeView>
+    <include layout="@layout/room_layout_gift"/>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

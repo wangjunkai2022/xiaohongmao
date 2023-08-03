@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/layout_toolbar_group_manager"/>
+    <include android:id="@+id/llHeader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/toolbar" layout="@layout/layout_enter_chat_name"/>
+    <FrameLayout android:id="@+id/llAddMemberParent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/llHeader">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llGroupManagementBtns" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llAddMember" android:background="?android:attr/colorBackground" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:layout_marginStart="@dimen/default_activity_margin">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actions_addmember2" android:layout_marginEnd="8dp" app:tint="@color/imAccent"/>
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/imAccent" android:id="@+id/tvAddMember" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_group_manager_add_member"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llShareLink" android:background="?android:attr/colorBackground" android:visibility="gone" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:layout_marginStart="@dimen/default_activity_margin">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@android:drawable/ic_menu_share" android:layout_marginEnd="8dp" app:tint="@color/imAccent"/>
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/imAccent" android:id="@+id/tvShareMember" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_group_manager_invite_member"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/candidatesList" android:background="?android:attr/colorBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_activity_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/llAddMember"/>
+    </FrameLayout>
+    <View android:id="@+id/divider" android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/llAddMemberParent" style="@style/Divider"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/historyTabs" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/divider">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/tab"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/memberList" android:background="@color/white" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/tab"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@+id/rootLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/divider"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/addFab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:src="@drawable/ic_check" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:rippleColor="@color/md_blue_100"/>
+    <FrameLayout android:id="@+id/flLoading" android:background="#80ffffff" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/private_type_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="18sp" android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_setstring_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/room_private_pwd_title"/>
+    <TextView android:textColor="@color/me_tab_txt_color" android:gravity="center" android:id="@+id/private_setstring_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@string/room_private_pwd_text"/>
+    <EditText android:gravity="center_vertical" android:id="@+id/private_setstring_edit" android:paddingLeft="10dp" android:paddingRight="10dp" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:hint="@string/room_private_pwd_edit" android:maxLines="1" android:lines="1" android:inputType="text" android:imeOptions="actionDone"/>
+    <View android:background="@color/global_setting_topline" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="18dp" android:textColor="@color/yunkacolor" android:gravity="center" android:id="@+id/private_setstring_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        <View android:background="@color/global_setting_topline" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="18dp" android:textColor="@color/yunkacolor" android:gravity="center" android:id="@+id/private_setstring_commit" android:layout_width="0dp" android:layout_height="match_parent" android:text="保存" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

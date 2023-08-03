@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emotion">
+        <item>Keep secret</item>
+        <item>Single</item>
+        <item>In love</item>
+        <item>Married</item>
+        <item>Gay</item>
+    </string-array>
+</resources>

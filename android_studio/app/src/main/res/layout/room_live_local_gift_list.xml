@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/room_ll_gift_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="258dp" android:layout_alignParentBottom="true" android:animateLayoutChanges="true" android:layout_alignParentStart="true">
+    <com.qennnsad.aknkaksd.presentation.ui.room.gift.LocalAnimPlayerView android:id="@+id/local_gift_anim_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.qennnsad.aknkaksd.presentation.ui.room.gift.LocalAnimPlayerView android:id="@+id/local_gift_anim_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

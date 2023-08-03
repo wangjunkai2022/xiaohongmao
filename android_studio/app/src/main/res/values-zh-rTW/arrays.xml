@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emotion">
+        <item>保密</item>
+        <item>單身</item>
+        <item>熱戀中</item>
+        <item>已婚</item>
+        <item>同性</item>
+    </array>
+    <array name="rank_page_type_titles">
+        <item>明星榜</item>
+        <item>富豪榜</item>
+        <item>赌神榜</item>
+        <item>PK</item>
+    </array>
+</resources>
