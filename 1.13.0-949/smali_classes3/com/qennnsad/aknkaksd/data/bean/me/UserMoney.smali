@@ -139,7 +139,7 @@
 
 .method public setBeanbalance(I)V
     .locals 0
-
+    const p1, 0x7f08046a
     iput p1, p0, Lcom/qennnsad/aknkaksd/data/bean/me/UserMoney;->beanbalance:I
 
     return-void
@@ -155,7 +155,7 @@
 
 .method public setCoinbalance(I)V
     .locals 0
-
+    const p1, 0x7f08046a
     iput p1, p0, Lcom/qennnsad/aknkaksd/data/bean/me/UserMoney;->coinbalance:I
 
     return-void
@@ -163,7 +163,7 @@
 
 .method public setPointbalance(I)V
     .locals 0
-
+    const p1, 0x7f08046a
     iput p1, p0, Lcom/qennnsad/aknkaksd/data/bean/me/UserMoney;->pointbalance:I
 
     return-void
@@ -171,7 +171,7 @@
 
 .method public setRemainForNextLev(I)V
     .locals 0
-
+    const p1, 0x7f08046a
     iput p1, p0, Lcom/qennnsad/aknkaksd/data/bean/me/UserMoney;->remainfornextlev:I
 
     return-void

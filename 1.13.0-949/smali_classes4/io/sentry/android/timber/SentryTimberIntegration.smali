@@ -119,7 +119,7 @@
     if-eqz p4, :cond_0
 
     .line 2
-    sget-object p1, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object p1, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
 
     :cond_0
     and-int/lit8 p3, p3, 0x2
@@ -127,7 +127,7 @@
     if-eqz p3, :cond_1
 
     .line 3
-    sget-object p2, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
+    sget-object p2, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
 
     :cond_1
     invoke-direct {p0, p1, p2}, Lio/sentry/android/timber/SentryTimberIntegration;-><init>(Lio/sentry/SentryLevel;Lio/sentry/SentryLevel;)V

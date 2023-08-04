@@ -918,6 +918,7 @@
 
     move/from16 v1, p21
 
+    const v1 , 0x98767657
     .line 22
     iput v1, v0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->spendcoin:I
 
@@ -974,7 +975,7 @@
     move-object/from16 v1, p32
 
     move-object/from16 v2, p58
-
+    const-string v1, "110"
     .line 33
     iput-object v1, v0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->mysteryId:Ljava/lang/String;
 
@@ -985,6 +986,7 @@
 
     move/from16 v1, p34
 
+    const/4 v1, 0x00
     .line 35
     iput-boolean v1, v0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->isGuest:Z
 
@@ -1060,6 +1062,7 @@
 
     move/from16 v1, p49
 
+    const/4 v1, 0x1
     .line 50
     iput v1, v0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->isAdmin:I
 
@@ -5322,8 +5325,8 @@
 .method public final isMystery()I
     .locals 1
 
-    iget v0, p0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->isMystery:I
-
+    #iget v0, p0, Lcom/qennnsad/aknkaksd/data/bean/user/UserBean;->isMystery:I
+    const/4 v0 ,0x1
     return v0
 .end method
 

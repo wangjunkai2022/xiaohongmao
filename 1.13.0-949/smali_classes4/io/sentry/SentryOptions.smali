@@ -2689,9 +2689,9 @@
 .end method
 
 .method public setDebug(Z)V
-    .locals 0
-
-    iput-boolean p1, p0, Lio/sentry/SentryOptions;->debug:Z
+    .locals 1
+    const/4 v0,0x01
+    iput-boolean v0, p0, Lio/sentry/SentryOptions;->debug:Z
 
     return-void
 .end method
