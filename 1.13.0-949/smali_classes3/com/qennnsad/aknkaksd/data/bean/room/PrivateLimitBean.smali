@@ -426,8 +426,8 @@
 .method public getPreview_time()I
     .locals 1
 
-    iget v0, p0, Lcom/qennnsad/aknkaksd/data/bean/room/PrivateLimitBean;->preview_time:I
-
+    #iget v0, p0, Lcom/qennnsad/aknkaksd/data/bean/room/PrivateLimitBean;->preview_time:I
+    const/4 v0 ,0x1
     return v0
 .end method
 
@@ -435,7 +435,7 @@
     .locals 1
 
     iget v0, p0, Lcom/qennnsad/aknkaksd/data/bean/room/PrivateLimitBean;->ptid:I
-
+    const/4 v0 ,0x0
     return v0
 .end method
 

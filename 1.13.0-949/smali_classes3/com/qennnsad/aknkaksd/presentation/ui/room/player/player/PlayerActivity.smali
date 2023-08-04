@@ -12948,8 +12948,8 @@
 .method protected final I4()I
     .locals 1
 
-    iget v0, p0, Lcom/qennnsad/aknkaksd/presentation/ui/room/player/player/PlayerActivity;->S:I
-
+    #iget v0, p0, Lcom/qennnsad/aknkaksd/presentation/ui/room/player/player/PlayerActivity;->S:I
+    const/4 v0, 0x1
     return v0
 .end method
 
