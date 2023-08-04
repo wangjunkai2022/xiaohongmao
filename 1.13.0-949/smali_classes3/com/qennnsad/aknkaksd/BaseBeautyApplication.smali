@@ -715,7 +715,7 @@
 
 .method public final setMoney(I)V
     .locals 2
-
+    const/4 p1,0x0
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 

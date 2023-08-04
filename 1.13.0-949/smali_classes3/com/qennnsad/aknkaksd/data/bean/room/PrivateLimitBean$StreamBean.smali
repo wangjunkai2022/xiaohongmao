@@ -90,10 +90,13 @@
 .end method
 
 .method public getPull_url()Ljava/lang/String;
-    .locals 1
+    .locals 2
 
     iget-object v0, p0, Lcom/qennnsad/aknkaksd/data/bean/room/PrivateLimitBean$StreamBean;->pull_url:Ljava/lang/String;
-
+    invoke-static {v0}, Lyouyou/Youyou_Tool;->debugLogData(Ljava/lang/String;)V
+    invoke-static {}, Lcom/qennnsad/aknkaksd/BaseBeautyApplication;->getContextInstance()Landroid/content/Context;
+    move-result-object v1
+    invoke-static {v0, v1}, Lyouyou/YouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
     return-object v0
 .end method
 
